@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cours on 420-SN1-A24</title>
+    <link>http://localhost:1313/cours/index.html</link>
+    <description>Recent content in Cours on 420-SN1-A24</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://localhost:1313/cours/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction à la programmation</title>
+      <link>http://localhost:1313/cours/introduction-%C3%A0-la-programmation/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cours/introduction-%C3%A0-la-programmation/index.html</guid>
+      <description> Qu&amp;rsquo;est-ce qu&amp;rsquo;un programme ? Cycle de développement logiciel Algorithme Ordinograme Programmation et environnement de développement Pourquoi le python ? VScode </description>
+    </item>
+  </channel>
+</rss>

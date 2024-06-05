@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.123.2">
+    <meta name="generator" content="Relearn 5.9.4">
+    <meta name="description" content="">
+    <title>Configuration de base du routeur :: 420-SN1-A24</title>
+    <link href="/cours/configuration-de-base-du-routeur/index.xml" rel="alternate" type="application/rss+xml" title="Configuration de base du routeur :: 420-SN1-A24">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1717614284" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1717614284" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1717614284" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1717614284" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1717614284" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1717614284" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1717614284" rel="stylesheet">
+    <link href="/css/nucleus.css?1717614284" rel="stylesheet">
+    <link href="/css/fonts.css?1717614284" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1717614284" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1717614284" rel="stylesheet">
+    <link href="/css/theme-zen-dark.css?1717614284" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1717614284" rel="stylesheet">
+    <link href="/css/variant.css?1717614284" rel="stylesheet">
+    <link href="/css/print.css?1717614284" rel="stylesheet" media="print">
+    <script src="/js/url.js?1717614284"></script>
+    <script src="/js/variant.js?1717614284"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='http:\/\/localhost:1313/';
+      window.variants && variants.init( [ 'zen-dark' ] );
+    </script>
+    <script src="/js/jquery.min.js?1717614284" defer></script>
+  </head>
+  <body class="mobile-support html" data-url="/cours/configuration-de-base-du-routeur/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable" dir="ltr">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next" href="/cours/couche-transport/index.html" title="Couche Transport (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev" href="/cours/couche-r%C3%A9seau/index.html" title="Couche réseau (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">420-SN1-A24</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/cours/index.html"><span itemprop="name">Cours</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Configuration de base du routeur</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper" dir="ltr">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#organisation-de-la-mémoire-des-routeurs-cisco">Organisation de la mémoire des routeurs Cisco</a></li>
+    <li><a href="#interfaces-dun-routeur">Interfaces d&rsquo;un routeur</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#les-différents-modes-du-cli">Les différents modes du CLI</a></li>
+    <li><a href="#configuration-de-base-du-routeur">Configuration de base du routeur</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#configuration-de-linterface-g000">Configuration de l&rsquo;interface G0/0/0</a></li>
+    <li><a href="#configuration-de-linterface-g001">Configuration de l&rsquo;interface G0/0/1</a></li>
+    <li><a href="#vérification-de-la-configuration">Vérification de la configuration</a>
+      <ul>
+        <li><a href="#vérification-des-interfaces">Vérification des interfaces</a></li>
+        <li><a href="#vérification-des-tables-de-routages">Vérification des tables de routages</a></li>
+        <li><a href="#résumé-des-commandes-de-vérification">Résumé des commandes de vérification</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article class="default">
+<h1 id="configuration-de-base-du-routeur">Configuration de base du routeur</h1>
+
+<h1 id="composants-dun-routeur">Composants d&rsquo;un routeur</h1>
+<p>Un routeur est un ordinateur. Comme les ordinateurs, un routeur nécessite un processeur, un système d&rsquo;exploitation et de la mémoire.</p>
+<p>Le système d&rsquo;exploitation de Cisco est IOS (Internetworking Operating System).</p>
+<p>
+<a href="/cours/configuration-de-base-du-routeur/composant-routeur.png" data-featherlight="image">
+<img src="/cours/configuration-de-base-du-routeur/composant-routeur.png" alt="" style="height: auto; width: auto;" loading="lazy">
+</a></p>
+<h2 id="organisation-de-la-mémoire-des-routeurs-cisco">Organisation de la mémoire des routeurs Cisco</h2>
+<p>
+<a href="/cours/configuration-de-base-du-routeur/memoire-routeurs.png" data-featherlight="image">
+<img src="/cours/configuration-de-base-du-routeur/memoire-routeurs.png" alt="" style="height: auto; width: auto;" loading="lazy">
+</a></p>
+<h2 id="interfaces-dun-routeur">Interfaces d&rsquo;un routeur</h2>
+<ul>
+<li>Interfaces LAN et WAN</li>
+<li>Interfaces de gestion</li>
+</ul>
+<p>
+<a href="/cours/configuration-de-base-du-routeur/interfaces-routeur.png" data-featherlight="image">
+<img src="/cours/configuration-de-base-du-routeur/interfaces-routeur.png" alt="" style="height: auto; width: auto;" loading="lazy">
+</a></p>
+<p>On accède à la gestion des routeurs par 3 moyens :</p>
+<ol>
+<li>Console : Port de gestion physique, on doit être en présence du routeur pour se connecter.</li>
+<li>SSH : Méthode de connexion sécurisé à distance.</li>
+<li>Telnet : Méthode de connexion non sécurisée à distance.</li>
+</ol>
+<h1 id="configuration-des-paramètres-initiaux-du-routeur">Configuration des Paramètres Initiaux du Routeur</h1>
+<p>On a un certain nombre de configurations à faire sur le routeur avant de commencer à paramétrer les tables de routage.</p>
+<h2 id="les-différents-modes-du-cli">Les différents modes du CLI</h2>
+<p>Pour être capable de configurer le routeur, il faut être en mode privilégié. Ce mode est similaire à l&rsquo;accès <code>root</code> de Linux.</p>
+<pre tabindex="0"><code>Router&gt;enable
+Router#configure terminal
+Router(config)#end
+Router#disable
+Router&gt;
+</code></pre><p>La commande <code>enable</code> permet le passage au mode privilégié, cela change le pompt du CLI de <code>&gt;</code> à <code>#</code>.</p>
+<p>Un mot de passe peut vous être demandé s&rsquo;il a été configuré. Ce mot de passe peut être différent de celui autorisant la connexion au routeur.</p>
+<h2 id="configuration-de-base-du-routeur">Configuration de base du routeur</h2>
+<ul>
+<li>Configurer le nom de l&rsquo;appareil</li>
+</ul>
+<pre tabindex="0"><code>Router(config)# hostname hostname
+</code></pre><ul>
+<li>Désactivez la recherche DNS.</li>
+</ul>
+<pre tabindex="0"><code>Router(config)# no ip domain lookup
+</code></pre><ul>
+<li>Sécuriser le mode d&rsquo;exécution privilégié (mot de passe chiffré)</li>
+</ul>
+<pre tabindex="0"><code>Router(config)# enable secret mot_de_passe
+</code></pre><ul>
+<li>Cryptez tous les mots de passe en clair.</li>
+</ul>
+<pre tabindex="0"><code>Routeur(config)# service password-encryption
+</code></pre><ul>
+<li>Sécuriser le mode d&rsquo;exécution de la console.</li>
+</ul>
+<pre tabindex="0"><code>Router(config)# line console 0
+Router(config-line)# password password
+Router(config-line)# login
+</code></pre><ul>
+<li>Sécuriser l’accès à distance Telnet et SSH.</li>
+</ul>
+<pre tabindex="0"><code>Router(config)# line vty 0 4
+Router(config-line)# password password
+Router(config-line)# login
+Router(config-line)# transport input {ssh | telnet}
+</code></pre><ul>
+<li>Fournissez une notification légale</li>
+</ul>
+<pre tabindex="0"><code>Router(config)# banner motd # message #
+Router(config)# end
+</code></pre><ul>
+<li>enregistrez la configuration une fois sorti du mode <code>config</code></li>
+</ul>
+<pre tabindex="0"><code>Router# copy running-config startup-config
+</code></pre><p>Exemple de configuration :</p>
+<pre tabindex="0"><code>Routeur (config) # hostname R1
+R1 (config) # hostname R1
+R1 (config) # no ip domain lookup
+R1 (config) # enable secret class
+R1 (config) # line console 0
+R1 (config-line) # password cisco
+R1 (config-line) # login
+R1 (config-line) # line vty 0 4
+R1 (config-line) # password cisco
+R1 (config-line) # login
+R1 (config-line) # transport input ssh
+R1 (config-line) # exit
+R1 (config) # service password-encryption
+R1 (config) # banner motd
+Enter TEXT message. End with a new line and the #
+***************************************************
+WARNING:
+Unauthorized access is prohibited
+***************************************************
+R1 (config) # exit
+R1 # copy running-config startup-config
+</code></pre><p>On finit par enregistrer la configuration dans la NVRAM</p>
+<h1 id="configuration-des-interfaces">Configuration des interfaces</h1>
+<p>L&rsquo;étape suivante consiste à configurer les interfaces réseaux.</p>
+<p>
+<a href="/cours/configuration-de-base-du-routeur/config-routeur.png" data-featherlight="image">
+<img src="/cours/configuration-de-base-du-routeur/config-routeur.png" alt="" style="height: auto; width: auto;" loading="lazy">
+</a></p>
+<h2 id="configuration-de-linterface-g000">Configuration de l&rsquo;interface G0/0/0</h2>
+<pre tabindex="0"><code>R1 (config) # interface gigabitEthernet 0/0/0
+R1 (config-if) # description lien avec LAN
+R1 (config-if) # ip address 192.168.0.1 255.255.255.0
+R1 (config-if) # ipv6 address 2001:db8:acad:10::1/64
+R1 (config-if) # no shutdown
+R1 (config-if) # exit
+R1 (config) #
+*Aug 1 01:43:53.435: %LINK 3 UPDOWN: Interface GigabitEthernet0/0/0, changed state to down
+*Aug 1 01:43:56.447: %LINK 3 UPDOWN: Interface DigabitEthernet0/0/0, changed state to up
+*Aug 1 01:43:57.447: %LINEPROTO 5 UPDOWN: Line protocol on Interface GigabitEthernet0/0/0, changed state to up
+</code></pre><ul>
+<li>La commande <code>description</code> ajoute des informations sur le réseau connecté à l&rsquo;interface.</li>
+<li>La commande <code>no shutdown</code> active l&rsquo;interface.</li>
+</ul>
+<h2 id="configuration-de-linterface-g001">Configuration de l&rsquo;interface G0/0/1</h2>
+<pre tabindex="0"><code>R1 (config) # interface gigabitEthernet 0/0/1
+R1 (config-if) # description lien avec LAN
+R1 (config-if) # ip address 192.168.1.1 255.255.255.0
+R1 (config-if) # ipv6 address 2001:db8:acad:10::1/64
+R1 (config-if) # no shutdown
+R1 (config-if) # exit
+R1 (config) #
+*Aug 1 01:43:53.435: %LINK 3 UPDOWN: Interface GigabitEthernet0/0/0, changed state to down
+*Aug 1 01:43:56.447: %LINK 3 UPDOWN: Interface GigabitEthernet0/0/0, changed state to up
+*Aug 1 01:43:57.447: %LINEPROTO 5 UPDOWN: Line protocol on Interface GigabitEthernet0/0/0, changed state to up
+</code></pre><h2 id="vérification-de-la-configuration">Vérification de la configuration</h2>
+<h3 id="vérification-des-interfaces">Vérification des interfaces</h3>
+<pre tabindex="0"><code>R1 # show ip interface brief
+Interface IP-Address OK? Method Status Protocol
+GigabitEthernet0/0/0 192.168.10.1 YES manual up up
+GigabiteThernet0/0/1 209.165.200.225 OUI manuel up
+Vlan1 unassigned YES unset administratively down down
+R1 # show ipv6 interface brief
+GigabitEthernet0/0/0 [up/up]
+	FE80::201:C9FF:FE89:4501
+	2001:DB8:ACAD:10::1
+GigabitEthernet0/0/1 [up/up]
+	FE80: :201:C9FF:FE 89:4502
+	2001:DB8:FEED:224::1
+Vlan1 [administratively down/down]
+	unassigned
+R1#
+</code></pre><h3 id="vérification-des-tables-de-routages">Vérification des tables de routages</h3>
+<pre tabindex="0"><code>R1 # show ip route
+&lt; output omitted&gt;
+Gateway of last resort is not set
+	192.168.10.0/24 is variably subnetted, 2 subnets, 2 masks
+C 192.168.10.0/24 is directly connected, GigabitEthernet0/0/0
+L 192.168.10.1/32 is directly connected, GigabitEthernet0/0/0
+	209.165.200.0/24 is variably subnetted, 2 subnets, 2 masks
+C 209.165.200.224/30 is directly connected, GigabitEthernet0/0/1
+L 209.165.200.225/32 is directly connected, GigabitEthernet0/0/1
+R1 # show ipv6 route
+&lt;résultat omis&gt;
+C 2001:DB8:ACAD:10::/64 [0/0]
+	via GigabiteThernet0/0/0, directly connected
+L 2001:DB8:ACAD:10::1/128 [0/0]
+	via GigabiteThernet0/0/0, receive
+C 2001:DB8:FEED:224::/64 [0/0]
+	via GigabitEthernet0/0/1, directly connected
+L 2001:DB8:FEED:224::1/128 [0/0]
+	via GigabitEthernet0/0/1, receive
+L FF00::/8 [0/0]
+	via Null0, receive
+R1#
+</code></pre><h3 id="résumé-des-commandes-de-vérification">Résumé des commandes de vérification</h3>
+<table>
+<thead>
+<tr>
+<th>Commandes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>show ip interface brief</code><!-- raw HTML omitted --><code>show ipv6 interface brief</code></td>
+<td>Affiche toutes les interfaces, leurs adresses IP et leur état actuel.</td>
+</tr>
+<tr>
+<td><code>show ip route</code><!-- raw HTML omitted --><code>show ipv6 route</code></td>
+<td>Affiche le contenu des tables de routage IP stockées dans<!-- raw HTML omitted -->RAM.</td>
+</tr>
+<tr>
+<td><code>show interfaces</code></td>
+<td>Affiche des statistiques pour toutes les interfaces de l&rsquo;appareil. Affiche uniquement les informations d&rsquo;adressage IPv4.</td>
+</tr>
+<tr>
+<td><code>show ip interfaces</code></td>
+<td>Affiche les statistiques IPv4 pour toutes les interfaces d&rsquo;un<!-- raw HTML omitted -->routeur.</td>
+</tr>
+<tr>
+<td><code>show ipv6 interfaces</code></td>
+<td>Affiche les statistiques IPv6 pour toutes les interfaces d&rsquo;un<!-- raw HTML omitted -->routeur.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="configuration-de-la-passerelle-par-défaut">Configuration de la passerelle par défaut</h1>
+<p>Cette dernière étape consiste à donner la première entrée à notre table de routage.</p>
+<p>
+<a href="/cours/configuration-de-base-du-routeur/passerelle-par-defaut.png" data-featherlight="image">
+<img src="/cours/configuration-de-base-du-routeur/passerelle-par-defaut.png" alt="" style="height: auto; width: auto;" loading="lazy">
+</a></p>
+<ul>
+<li>La passerelle par défaut est utilisée lorsque l&rsquo;hôte veut transmettre un paquet à un périphérique situé sur un autre réseau.</li>
+<li>L&rsquo;adresse de la passerelle par défaut est généralement celle de l&rsquo;interface du routeur reliée au réseau local de l&rsquo;hôte.</li>
+<li>Pour atteindre PC3, PC1 adresse un paquet avec l&rsquo;adresse IPv4 de PC3, mais transfère le paquet à sa passerelle par défaut, l&rsquo;interface G0/0/0 de R1.</li>
+</ul>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation" dir="ltr">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<img src="/images/network.jpg">
+
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1717614284" defer></script>
+        <script src="/js/lunr/lunr.min.js?1717614284" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1717614284" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1717614284" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1717614284" defer></script>
+        <script src="/js/search.js?1717614284" defer></script>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics">
+          <li data-nav-id="/base-de-connaissances/index.html" class="dd-item"><a href="/base-de-connaissances/index.html">Base De Connaissances</a><ul id="subsections-20178e3fa8e2375eb4b5dcaa5e4bb059">
+          <li data-nav-id="/base-de-connaissances/enregistrement-vmware/index.html" class="dd-item"><a href="/base-de-connaissances/enregistrement-vmware/index.html">Enregistrement VMWare</a></li>
+          <li data-nav-id="/base-de-connaissances/gestion-du-stockage-des-vm-avec-vmware/index.html" class="dd-item"><a href="/base-de-connaissances/gestion-du-stockage-des-vm-avec-vmware/index.html">Gestion du stockage des VM avec VMWare</a></li>
+          <li data-nav-id="/base-de-connaissances/gestion-espace-disque-windows/index.html" class="dd-item"><a href="/base-de-connaissances/gestion-espace-disque-windows/index.html">Gestion espace disque windows</a></li>
+          <li data-nav-id="/base-de-connaissances/importation-vmware---virtualbox/index.html" class="dd-item"><a href="/base-de-connaissances/importation-vmware---virtualbox/index.html">Importation VMware - Virtualbox</a></li></ul></li>
+          <li data-nav-id="/cours/index.html" class="dd-item parent"><a href="/cours/index.html">Cours</a><ul id="subsections-2a099ab54b3d651b0702b70cc20b5850">
+          <li data-nav-id="/cours/couche-physique-et-liaison-de-donn%C3%A9es/index.html" class="dd-item"><a href="/cours/couche-physique-et-liaison-de-donn%C3%A9es/index.html">Couche physique et liaison de données</a></li>
+          <li data-nav-id="/cours/couche-r%C3%A9seau/index.html" class="dd-item"><a href="/cours/couche-r%C3%A9seau/index.html">Couche réseau</a></li>
+          <li data-nav-id="/cours/configuration-de-base-du-routeur/index.html" class="dd-item active"><a href="/cours/configuration-de-base-du-routeur/index.html">Configuration de base du routeur</a></li>
+          <li data-nav-id="/cours/couche-transport/index.html" class="dd-item"><a href="/cours/couche-transport/index.html">Couche Transport</a></li>
+          <li data-nav-id="/cours/couche-application/index.html" class="dd-item"><a href="/cours/couche-application/index.html">Couche application</a></li></ul></li>
+        </ul>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/cours/configuration-de-base-du-routeur/index.html" selected></option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="zen-dark" value="zen-dark" selected>Zen Dark</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</button></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1717614284" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1717614284" defer></script>
+    <script src="/js/featherlight.min.js?1717614284" defer></script>
+    <script src="/js/theme.js?1717614284" defer></script>
+  </body>
+</html>
