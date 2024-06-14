@@ -246,7 +246,7 @@ for i in range(len(matrice)):
 
 # Ateliers
 
-[Atelier sur les listes](atelier_listes.ipynb){:download}
+[Atelier sur les listes](atelier_listes.ipynb)
 
 
 
