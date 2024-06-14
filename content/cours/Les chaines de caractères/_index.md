@@ -65,7 +65,7 @@ maChaine = "Bonjour"
 
 ```python
 longueur = len(maChaine)
-print(maChaine)   # Affiche: 7
+print(longueur)   # Affiche: 7
 ```
 
 #### Conversion en chaine de caractères
@@ -158,7 +158,7 @@ lettreRecherchee = "o"
 
 indice = uneChaine.find(lettreRecherchee)
 
-while indice != 0:
+while indice != -1:
     print(indice, "=>", uneChaine[indice])
     indice = uneChaine.find(lettreRecherchee, indice + 1) # le 2e argument permet d'indiquer où la recherche doit commencer (0 par défaut)
 
