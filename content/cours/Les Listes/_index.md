@@ -18,7 +18,7 @@ Vous devez afficher le nom de tous les étudiants et leur âge.
 
 ### Solution sans liste
 
-```
+```python
 # On saisit chaque variable
 etudiant_01_nom = "Emma"
 etudiant_01_age = 18
@@ -40,7 +40,7 @@ L'utilisation des listes permettra d'exécuter cette tâche beaucoup plus facile
 Vous pourrez ajouter/modifier/enlever des étudiants.
 Et vous pourrez ajouter plusieurs informations pour chaque étudiant.  
 
-```
+```python
 # On remplit la liste
 etudiants = []
 etudiants.append(["Emma", 18])
@@ -53,6 +53,8 @@ for e in etudiants:
     print(e[0], e[1])
 ```
 
+![](imagesListes/exempleListe_01.png)
+
 
 # Qu'est-ce qu'une liste ?
 
@@ -64,15 +66,22 @@ En Python, une liste est une collection ordonnée et modifiable d'éléments. Le
 - **Modifiable** : Une liste peut être modifiée après sa création, ce qui signifie que vous pouvez ajouter, supprimer ou changer des éléments.
 - **Taille Dynamique** : Une liste en Python peut changer de taille dynamiquement. Vous pouvez ajouter ou supprimer des éléments sans avoir à spécifier la taille initiale de la liste.
 - **Hétérogène** : En *Python*, une liste peut contenir des éléments de différents types (entiers, chaînes de caractères, listes, etc.).
+    - Bien qu'il est possible de le faire, il faut rester prudent lorsqu'on utilise des listes hétérogènes. Elles pourraient entraîner des erreurs, notamment dans les boucles.
 
 
 # Comment utiliser une liste ?
 
-## Fonctions
+## Fonctions et méthodes
 
-| Fonction |  |
+| Fonctions |  |
 | ---- | ----|
 | len() | Retourne la longueur de la liste |
+| max() | Retourne la valeur maximum de la liste |
+| min() | Retourne la valeur minimum de la liste |
+
+
+| Méthodes |  |
+| ---- | ----|
 | append() | Ajoute un élément à la fin de la liste |
 | insert() | Ajoute un élément à un endroit spécifique dans la liste |
 | remove() | Supprime un élément de la valeur spécifiée |
@@ -85,8 +94,6 @@ En Python, une liste est une collection ordonnée et modifiable d'éléments. Le
 | sort() | Trie les éléments de la liste |
 | reverse() | Inverse l'ordre des éléments de la liste |
 | copy() | Retourne une copie superficielle de la liste |
-| max() | Retourne la valeur maximum de la liste |
-| min() | Retourne la valeur minimum de la liste |
 
 
 
@@ -94,7 +101,7 @@ En Python, une liste est une collection ordonnée et modifiable d'éléments. Le
 
 ### Création d'une liste
 
-```
+```python
 # Création d'une liste vide
 ma_liste = []
 
@@ -104,7 +111,7 @@ ma_liste = [1, 2, 3, 4, 5]
 
 ### Accès aux Éléments d'une Liste
 
-```
+```python
 # Accès au premier élément
 print(ma_liste[0])  # Affiche 1
 
@@ -116,7 +123,7 @@ Notez que les indices commencent à zéro.
 
 ### Ajout d'Éléments
 
-```
+```python
 # Ajouter un élément à la fin de la liste
 ma_liste.append(6)
 print(ma_liste)  # Affiche [1, 20, 3, 4, 5, 6]
@@ -129,7 +136,7 @@ print(ma_liste)  # Affiche [1, 15, 20, 3, 4, 5, 6]
 
 ### Suppression d'Éléments
 
-```
+```python
 # Supprimer un élément spécifique
 ma_liste.remove(20)
 print(ma_liste)  # Affiche [1, 15, 3, 4, 5, 6]
@@ -146,7 +153,7 @@ print(ma_liste)  # Affiche [1, 3, 4, 5]
 
 ### Modification des Éléments
 
-```
+```python
 # Modification du deuxième élément
 ma_liste[1] = 20
 print(ma_liste)  # Affiche [1, 20, 4, 5]
@@ -158,7 +165,7 @@ print(ma_liste)  # Affiche [1, 20, 4, 5]
 
 Il est possible de parcourir chacun des éléments de la liste avec une boucle FOR:
 
-```
+```python
 # Affichage de chacun des éléments de la liste
 for element in ma_liste:
     print(element)
@@ -166,7 +173,7 @@ for element in ma_liste:
 
 Il est aussi possible d'utiliser la fonction `range()` afin de parcourir la liste à l'aide des indices:
 
-```
+```python
 # On additionne 1 à chaque élément de la liste
 for i in range(len(ma_liste)):
     ma_liste[i] = ma_liste[i] + 1
@@ -175,7 +182,7 @@ for i in range(len(ma_liste)):
 
 Il est aussi possible de parcourir une liste dans une boucle WHILE:
 
-```
+```python
 # On affiche les premiers éléments de la liste.
 # On arrête dès que le total atteint au moins 10
 
@@ -196,7 +203,7 @@ Il est donc possible de mettre des listes dans des listes.
 Nous parlons alors de listes (ou tableaux) en 2 dimensions.
 
 
-```
+```python
 # Liste contenant 3 éléments
 # Chaque élément est une liste contenant 2 nombres
 matrice = [[1, 2], [3, 4], [5, 6]]
@@ -204,7 +211,7 @@ matrice = [[1, 2], [3, 4], [5, 6]]
 
 Pour parcourir toutes les listes, il suffit de mettre une boucle dans une boucle :
 
-```
+```python
 # On parcourt chaque éléments de la liste principale
 for sousliste in matrice:
     # et ensuite chaque élément de la "sous-liste"
@@ -215,7 +222,7 @@ for sousliste in matrice:
 
 Les opérations vues sur les listes en 1 dimension fonctionnent aussi pour les listes en 2D:
 
-```
+```python
 print(matrice[0]) # affiche la première liste de la matrice
 print(matrice[0][1]) # affiche le 2e élément de la première liste de la matrice
 
@@ -224,7 +231,7 @@ matrice.append([7, 8]) # ajoute une nouvelle liste à la matrice
 
 Il est aussi possible de parcourir les listes en utilisant les indices et la fonction `range()`:
 
-```
+```python
 # On ajoute 1 à chaque élément de la matrice
 for i in range(len(matrice)):
     for j in range(len(matrice[i])):
@@ -245,26 +252,26 @@ for i in range(len(matrice)):
 
 # Traces d'exécution
 
-```
+```python
 maListe = []
 ```
 
 ![](imagesListes/trace_01.png)
 
 
-```
+```python
 maListe.append(6)
 ```
 
 ![](imagesListes/trace_02.png)
 
-```
+```python
 maListe.append(3)
 ```
 
 ![](imagesListes/trace_03.png)
 
-```
+```python
 maListe.append(8)
 maListe.append(9)
 maListe.append(7)
@@ -276,7 +283,7 @@ maListe.append(2)
 ![](imagesListes/trace_04.png)
 
 
-```
+```python
 maListe[2] = 0
 maListe[4] = maListe[7]
 ```
@@ -284,35 +291,35 @@ maListe[4] = maListe[7]
 ![](imagesListes/trace_05.png)
 
 
-```
+```python
 maListe[0] = maListe[maListe[7]]
 ```
 
 ![](imagesListes/trace_06.png)
 
 
-```
+```python
 maListe[4] = maListe[maListe[7] + maListe[6]]
 ```
 
 ![](imagesListes/trace_07.png)
 
 
-```
+```python
 maListe.pop()
 ```
 
 ![](imagesListes/trace_08.png)
 
 
-```
+```python
 maListe.pop(2)
 ```
 
 ![](imagesListes/trace_09.png)
 
 
-```
+```python
 maListe.insert(3, 7)
 ```
 
@@ -320,7 +327,7 @@ maListe.insert(3, 7)
 
 
 
-```
+```python
 maListe.remove(3)
 ```
 
@@ -329,19 +336,19 @@ maListe.remove(3)
 
 
 
-```
+```python
 maListe.sort()
 ```
 
 ![](imagesListes/trace_12.png)
 
-```
+```python
 maListe.sort(reverse=True)
 ```
 
 ![](imagesListes/trace_13.png)
 
-```
+```python
 autreListe = [5, 6]
 maListe.extend(autreListe)
 ```
@@ -349,7 +356,7 @@ maListe.extend(autreListe)
 ![](imagesListes/trace_14.png)
 
 
-```
+```python
 maListe.clear()
 ```
 
