@@ -3,7 +3,7 @@ title: Les Listes
 weight: "1"
 ---
 
-![](An_abstract_illustration_representing_Python_lists_converted.png)
+![](listes.png?width=25vw)
 
 # Pourquoi utiliser des listes ?
 
@@ -239,10 +239,6 @@ for i in range(len(matrice)):
 ```
 
 
-# Quand utiliser une liste ?
-
--
-
 
 # Ateliers
 
@@ -251,6 +247,9 @@ for i in range(len(matrice)):
 
 
 # Traces d'exécution
+
+// todo: mettre les traces au fur et à mesure
+
 
 ```python
 maListe = []

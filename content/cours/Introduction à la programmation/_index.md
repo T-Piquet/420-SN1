@@ -16,4 +16,3 @@ weight: "1"
 ## Pourquoi le python ?
 
 ## VScode
-

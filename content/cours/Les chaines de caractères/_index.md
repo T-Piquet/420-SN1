@@ -3,7 +3,7 @@ title: Les Chaines de caractères
 weight: "1"
 ---
 
-![](An_abstract_image_representing_strings_in_Python.png)
+![](strings.png?width=25vw)
 
 
 # Qu'est-ce qu'une chaine de caractères ?
@@ -53,144 +53,16 @@ Les chaînes en Python sont **immuables**, ce qui signifie qu'une fois créées,
 
 
 
+## Les indices
+
+
+![](chaine_01.png)
+
+
 ### Exemples
 
-#### Création
 
-```python
-maChaine = "Bonjour"
-```
-
-#### Longueur
-
-```python
-longueur = len(maChaine)
-print(longueur)   # Affiche: 7
-```
-
-#### Conversion en chaine de caractères
-
-```python
-laChaine = str(123)   #   laChaine sera une "string" et non plus un nombre
-```
-
-
-
-#### Concaténation
-
-```python
-maChaine = maChaine + " le monde"
-print(maChaine)   # Affiche: "Bonjour le monde"
-```
-
-#### Multiplication
-
-```python
-uneChaineRepetee = "Allo" * 3
-print(uneChaineRepetee)   # Affiche: "AlloAlloAllo"
-```
-
-#### []
-
-```python
-print(maChaine[0])   # Affiche: "B"
-
-c = maChaine[0] + maChaine[2]
-print(c)   # Affiche: "Bn"     soit la 1ere et 3e lettre de "Bonjour"
-
-print(maChaine[1:5])   # Affiche: "onjo"   
-```
-
-#### lower()
-
-```python
-c = maChaine.lower()
-print(c)   # Affiche:   "bonjour le monde"
-print(maChaine)   # Affiche:   "Bonjour le monde"
-```
-
-#### upper()
-
-```python
-c = maChaine.upper()
-print(c)   # Affiche:   "BONJOUR LE MONDE"
-print(maChaine)   # Affiche:   "Bonjour le monde"
-```
-
-#### strip()
-
-```python
-c = "  allo\t"
-print(len(c))   # Affiche:  7
-c = c.strip()
-print(len(c))   # Affiche:  4
-```
-
-#### replace()
-
-```python
-uneChaine = "abababababa"
-uneChaine = uneChaine.replace('a', 'b')
-print(uneChaine)   # Affiche:  "bbbbbbbbbbb"
-
-uneChaine = uneChaine.replace('bbb', 'c')
-print(uneChaine)   # Affiche:  "cccbb"
-```
-
-#### find()
-
-```python
-uneChaine = "Bonjour tout le monde"
-indice = uneChaine.find("o")
-print(indice)   # Affiche:  1
-
-indice = uneChaine.find("z")
-print(indice)   # Affiche:  -1
-
-indice = "Une autre phrase".find("p")
-print(indice)   # Affiche:  10
-```
-
-Pour trouver toutes les indices d'une lettre:
-```python
-uneChaine = "Bonjour tout le monde"
-lettreRecherchee = "o"
-
-indice = uneChaine.find(lettreRecherchee)
-
-while indice != -1:
-    print(indice, "=>", uneChaine[indice])
-    indice = uneChaine.find(lettreRecherchee, indice + 1) # le 2e argument permet d'indiquer où la recherche doit commencer (0 par défaut)
-
-# Affichera :
-# 1 => o
-# 4 => o
-# 9 => o
-# 17 => o
-```
-
-
-#### split()
-
-```python
-uneChaine = "un-deux-trois-quatre"
-nombres = uneChaine.split("-")
-print(nombres)   # Affiche:  ['un', 'deux', 'trois', 'quatre']
-
-nombres = uneChaine.split("-t")
-print(nombres)   # Affiche:  ['un-deux', 'rois-quatre']
-```
-
-#### join()
-
-```python
-listeMots = ['un', 'deux', 'trois', 'quatre']
-uneChaine = "-".join(listeMots)
-print(uneChaine)   # Affiche:  "un-deux-trois-quatre"
-
-uneChaine = " ==> ".join(listeMots)
-print(uneChaine)   # Affiche:  "un ==> deux ==> trois ==> quatre"
-```
+[Exemples sur les chaines de caractères](exemples_caracteres.ipynb)
 
 
 
@@ -207,19 +79,7 @@ print(uneChaine)   # Affiche:  "un ==> deux ==> trois ==> quatre"
 Le `\` permet d'échapper le caractère suivant.
 
 
-Exemple:
-
-```python
-uneChaine = "la\tchaine de\ncaractères"
-print(uneChaine)
-
-# Affiche:
-# la	chaine de
-# caractères
-```
-
-
-## f-strings
+## Insertion de variables
 
 Il est possible d'insérer facilement des variables dans des chaines de caractères.
 Une première solution est d'utiliser la concaténation:
@@ -246,25 +106,11 @@ print(laChaine)   # Affiche:  Le nombre 23 est plus petit que 35
 Il est possible d'itérer sur chaque lettre de la chaine:
 
 ```python
-rang = 1
 for lettre in "Bonjour":
-    print(f'La lettre numéro {rang} est : {lettre}')
-    rang += 1
-
-# Affichera
-# La lettre numéro 1 est : B
-# La lettre numéro 2 est : o
-# La lettre numéro 3 est : n
-# La lettre numéro 4 est : j
-# La lettre numéro 5 est : o
-# La lettre numéro 6 est : u
-# La lettre numéro 7 est : r
+    print(lettre)
 ```
 
 
 # Ateliers
 
-[Atelier sur les chaines de caractères](atelier_caracteres.ipynb){:download}
-
-
-# Traces d'exécution
+[Atelier sur les chaines de caractères](atelier_caracteres.ipynb)
