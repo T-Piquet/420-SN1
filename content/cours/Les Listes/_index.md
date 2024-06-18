@@ -53,7 +53,7 @@ for e in etudiants:
     print(e[0], e[1])
 ```
 
-![](./imagesListes/exempleListe_01.png)
+![](exempleListe_01.png)
 
 
 # Qu'est-ce qu'une liste ?
@@ -111,9 +111,9 @@ maListe = list()
 maListe = [6, 3, 8, 9, 7, 3, 1, 2]
 ```
 
-![](./imagesListes/trace_01.png)
+![](trace_01.png)
 
-![](./imagesListes/trace_04.png)
+![](trace_04.png)
 
 
 ### Accès aux Éléments d'une Liste
@@ -144,7 +144,7 @@ Notez que les indices commencent à zéro.
 maListe = []
 ```
 
-![](./imagesListes/trace_01.png)
+![](trace_01.png)
 
 
 ```python
@@ -152,14 +152,14 @@ maListe = []
 maListe.append(6)
 ```
 
-![](./imagesListes/trace_02.png)
+![](trace_02.png)
 
 ```python
 # Ajoute la valeur 3 à la fin de la liste
 maListe.append(3)
 ```
 
-![](./imagesListes/trace_03.png)
+![](trace_03.png)
 
 ```python
 maListe.append(8)
@@ -170,7 +170,7 @@ maListe.append(1)
 maListe.append(2)
 ```
 
-![](./imagesListes/trace_04.png)
+![](trace_04.png)
 
 
 ### Modification des Éléments
@@ -184,7 +184,7 @@ maListe[2] = 0
 maListe[4] = maListe[7]
 ```
 
-![](./imagesListes/trace_05.png)
+![](trace_05.png)
 
 
 ```python
@@ -197,7 +197,7 @@ nouvelleValeur = maListe[indice]   # nouvelleValeur vaut maListe[2], soit 0
 maListe[0] = nouvelleValeur    # La case à l'indice 0 vaut maintenant 0
 ```
 
-![](./imagesListes/trace_06.png)
+![](trace_06.png)
 
 
 ```python
@@ -210,7 +210,7 @@ nouvelleValeur = maListe[indice]   # nouvelleValeur vaut maListe[3], soit 9
 maListe[4] = nouvelleValeur    # La case à l'indice 4 vaut maintenant 9
 ```
 
-![](./imagesListes/trace_07.png)
+![](trace_07.png)
 
 
 
@@ -222,7 +222,7 @@ maListe[4] = nouvelleValeur    # La case à l'indice 4 vaut maintenant 9
 maListe.pop()
 ```
 
-![](./imagesListes/trace_08.png)
+![](trace_08.png)
 
 
 ```python
@@ -230,7 +230,7 @@ maListe.pop()
 maListe.pop(2)
 ```
 
-![](./imagesListes/trace_09.png)
+![](trace_09.png)
 
 
 
@@ -240,7 +240,7 @@ maListe.remove(3)
 ```
 
 
-![](./imagesListes/trace_11.png)
+![](trace_11.png)
 
 
 ### Insertion
@@ -250,7 +250,7 @@ maListe.remove(3)
 maListe.insert(3, 7)
 ```
 
-![](./imagesListes/trace_10.png)
+![](trace_10.png)
 
 
 ### Triage
@@ -260,14 +260,14 @@ maListe.insert(3, 7)
 maListe.sort()
 ```
 
-![](./imagesListes/trace_12.png)
+![](trace_12.png)
 
 ```python
 # La liste est triée en ordre décroissant
 maListe.sort(reverse=True)
 ```
 
-![](./imagesListes/trace_13.png)
+![](trace_13.png)
 
 
 
