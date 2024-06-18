@@ -53,7 +53,7 @@ for e in etudiants:
     print(e[0], e[1])
 ```
 
-![](imagesListes/exempleListe_01.png)
+![](./imagesListes/exempleListe_01.png)
 
 
 # Qu'est-ce qu'une liste ?
@@ -103,61 +103,176 @@ En Python, une liste est une collection ordonnée et modifiable d'éléments. Le
 
 ```python
 # Création d'une liste vide
-ma_liste = []
+maListe = []
+# ou
+maListe = list()
 
 # Liste avec des éléments
-ma_liste = [1, 2, 3, 4, 5]
+maListe = [6, 3, 8, 9, 7, 3, 1, 2]
 ```
+
+![](./imagesListes/trace_01.png)
+
+![](./imagesListes/trace_04.png)
+
 
 ### Accès aux Éléments d'une Liste
 
+Les crochets `[]` sont utilisés pour accéder directement à l'élément correspondant.  
+
 ```python
+
 # Accès au premier élément
-print(ma_liste[0])  # Affiche 1
+print(maListe[0])  # Affiche 6
 
 # Accès au dernier élément
-print(ma_liste[-1])  # Affiche 5
+print(maListe[-1])  # Affiche 2
+
+# Opérations sur les éléments de la liste
+x = maListe[1] + maListe[3]  # est l'équivalent de 3 + 9, soit les éléments qui se trouve aux indices 1 et 3
+print(x)    # Affiche 12
 ```
+
+
 
 Notez que les indices commencent à zéro.
 
 ### Ajout d'Éléments
 
 ```python
-# Ajouter un élément à la fin de la liste
-ma_liste.append(6)
-print(ma_liste)  # Affiche [1, 20, 3, 4, 5, 6]
-
-# Insérer un élément à une position spécifique
-ma_liste.insert(1, 15)
-print(ma_liste)  # Affiche [1, 15, 20, 3, 4, 5, 6]
+# Liste vide
+maListe = []
 ```
 
+![](./imagesListes/trace_01.png)
 
-### Suppression d'Éléments
 
 ```python
-# Supprimer un élément spécifique
-ma_liste.remove(20)
-print(ma_liste)  # Affiche [1, 15, 3, 4, 5, 6]
-
-# Supprimer le dernier élément
-ma_liste.pop()
-print(ma_liste)  # Affiche [1, 15, 3, 4, 5]
-
-# Supprimer le deuxième élément
-ma_liste.pop(1)
-print(ma_liste)  # Affiche [1, 3, 4, 5]
+# Ajoute la valeur 6 à la fin de la liste
+maListe.append(6)
 ```
+
+![](./imagesListes/trace_02.png)
+
+```python
+# Ajoute la valeur 3 à la fin de la liste
+maListe.append(3)
+```
+
+![](./imagesListes/trace_03.png)
+
+```python
+maListe.append(8)
+maListe.append(9)
+maListe.append(7)
+maListe.append(3)
+maListe.append(1)
+maListe.append(2)
+```
+
+![](./imagesListes/trace_04.png)
 
 
 ### Modification des Éléments
 
+
 ```python
-# Modification du deuxième élément
-ma_liste[1] = 20
-print(ma_liste)  # Affiche [1, 20, 4, 5]
+# La valeur de la case à l'indice 2 est maintenant 0
+maListe[2] = 0
+
+# La valeur de la case à l'indice 4 est maintenant la même que celle de la case à l'indice 7
+maListe[4] = maListe[7]
 ```
+
+![](./imagesListes/trace_05.png)
+
+
+```python
+# isch...
+maListe[0] = maListe[maListe[7]]
+
+# Décomposition du problème
+indice = maListe[7]   # indice vaut 2
+nouvelleValeur = maListe[indice]   # nouvelleValeur vaut maListe[2], soit 0
+maListe[0] = nouvelleValeur    # La case à l'indice 0 vaut maintenant 0
+```
+
+![](./imagesListes/trace_06.png)
+
+
+```python
+# Même logique...
+maListe[4] = maListe[maListe[7] + maListe[6]]
+
+# Décomposition du problème
+indice = maListe[7] + maListe[6]   # indice vaut 3
+nouvelleValeur = maListe[indice]   # nouvelleValeur vaut maListe[3], soit 9
+maListe[4] = nouvelleValeur    # La case à l'indice 4 vaut maintenant 9
+```
+
+![](./imagesListes/trace_07.png)
+
+
+
+### Suppression d'Éléments
+
+
+```python
+# Supprime le dernier élément de la liste
+maListe.pop()
+```
+
+![](./imagesListes/trace_08.png)
+
+
+```python
+# Supprime l'élément à l'indice 2
+maListe.pop(2)
+```
+
+![](./imagesListes/trace_09.png)
+
+
+
+```python
+# Supprime la première occurrence de la valeur 3
+maListe.remove(3)
+```
+
+
+![](./imagesListes/trace_11.png)
+
+
+### Insertion
+
+```python
+# Insert la valeur 7 à la case 3
+maListe.insert(3, 7)
+```
+
+![](./imagesListes/trace_10.png)
+
+
+### Triage
+
+```python
+# La liste est triée en ordre croissant
+maListe.sort()
+```
+
+![](./imagesListes/trace_12.png)
+
+```python
+# La liste est triée en ordre décroissant
+maListe.sort(reverse=True)
+```
+
+![](./imagesListes/trace_13.png)
+
+
+
+
+
 
 
 ## Dans une boucle
@@ -167,7 +282,7 @@ Il est possible de parcourir chacun des éléments de la liste avec une boucle F
 
 ```python
 # Affichage de chacun des éléments de la liste
-for element in ma_liste:
+for element in maListe:
     print(element)
 ```
 
@@ -175,8 +290,8 @@ Il est aussi possible d'utiliser la fonction `range()` afin de parcourir la list
 
 ```python
 # On additionne 1 à chaque élément de la liste
-for i in range(len(ma_liste)):
-    ma_liste[i] = ma_liste[i] + 1
+for i in range(len(maListe)):
+    maListe[i] = maListe[i] + 1
 ```
 
 
@@ -186,11 +301,11 @@ Il est aussi possible de parcourir une liste dans une boucle WHILE:
 # On affiche les premiers éléments de la liste.
 # On arrête dès que le total atteint au moins 10
 
-ma_liste = [1, 2, 3, 4, 5, 6, 7]
+maListe = [1, 2, 3, 4, 5, 6, 7]
 total = 0
 i = 0
 while total < 10:
-    print(ma_liste[i])
+    print(maListe[i])
     i += 1
 ```
 
@@ -243,120 +358,3 @@ for i in range(len(matrice)):
 # Ateliers
 
 [Atelier sur les listes](atelier_listes.ipynb)
-
-
-
-# Traces d'exécution
-
-// todo: mettre les traces au fur et à mesure
-
-
-```python
-maListe = []
-```
-
-![](imagesListes/trace_01.png)
-
-
-```python
-maListe.append(6)
-```
-
-![](imagesListes/trace_02.png)
-
-```python
-maListe.append(3)
-```
-
-![](imagesListes/trace_03.png)
-
-```python
-maListe.append(8)
-maListe.append(9)
-maListe.append(7)
-maListe.append(3)
-maListe.append(1)
-maListe.append(2)
-```
-
-![](imagesListes/trace_04.png)
-
-
-```python
-maListe[2] = 0
-maListe[4] = maListe[7]
-```
-
-![](imagesListes/trace_05.png)
-
-
-```python
-maListe[0] = maListe[maListe[7]]
-```
-
-![](imagesListes/trace_06.png)
-
-
-```python
-maListe[4] = maListe[maListe[7] + maListe[6]]
-```
-
-![](imagesListes/trace_07.png)
-
-
-```python
-maListe.pop()
-```
-
-![](imagesListes/trace_08.png)
-
-
-```python
-maListe.pop(2)
-```
-
-![](imagesListes/trace_09.png)
-
-
-```python
-maListe.insert(3, 7)
-```
-
-![](imagesListes/trace_10.png)
-
-
-
-```python
-maListe.remove(3)
-```
-
-![](imagesListes/trace_11.png)
-
-
-
-
-```python
-maListe.sort()
-```
-
-![](imagesListes/trace_12.png)
-
-```python
-maListe.sort(reverse=True)
-```
-
-![](imagesListes/trace_13.png)
-
-```python
-autreListe = [5, 6]
-maListe.extend(autreListe)
-```
-
-![](imagesListes/trace_14.png)
-
-
-```python
-maListe.clear()
-```
-
-![](imagesListes/trace_01.png)
