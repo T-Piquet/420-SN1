@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.1">
+    <meta name="generator" content="Relearn 5.9.4">
+    <meta name="description" content="">
+    <title>Bases de Python :: 420-SN1-A24</title>
+    <link href="/cours/bases-de-python/index.xml" rel="alternate" type="application/rss+xml" title="Bases de Python :: 420-SN1-A24">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1719591774" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1719591774" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1719591774" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1719591774" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1719591774" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1719591774" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1719591774" rel="stylesheet">
+    <link href="/css/nucleus.css?1719591774" rel="stylesheet">
+    <link href="/css/fonts.css?1719591774" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1719591774" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1719591774" rel="stylesheet">
+    <link href="/css/theme-zen-dark.css?1719591774" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1719591774" rel="stylesheet">
+    <link href="/css/variant.css?1719591774" rel="stylesheet">
+    <link href="/css/print.css?1719591774" rel="stylesheet" media="print">
+    <script src="/js/url.js?1719591774"></script>
+    <script src="/js/variant.js?1719591774"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='http:\/\/localhost:1313/';
+      window.variants && variants.init( [ 'zen-dark' ] );
+    </script>
+    <script src="/js/jquery.min.js?1719591774" defer></script>
+  </head>
+  <body class="mobile-support html" data-url="/cours/bases-de-python/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable" dir="ltr">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next" href="/cours/introduction-%C3%A0-la-programmation/index.html" title="Introduction à la programmation (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev" href="/cours/index.html" title="Cours (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">420-SN1-A24</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/cours/index.html"><span itemprop="name">Cours</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Bases de Python</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper" dir="ltr">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#atelier">Atelier</a></li>
+    <li><a href="#exemples">Exemples</a></li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article class="default">
+<h1 id="bases-de-python">Bases de Python</h1>
+
+<p>
+		
+<a href="/cours/bases-de-python/python.webp?width=25vw" data-featherlight="image">
+<img src="/cours/bases-de-python/python.webp?width=25vw" alt="" style="height: auto; width: 25vw;" loading="lazy">
+</a></p>
+<h2 id="atelier">Atelier</h2>
+<p><a href="Premier_pas_avec_Python.pdf">Atelier sur les bases de python</a></p>
+<h2 id="exemples">Exemples</h2>
+<p><a href="Python_Intro.ipynb">Exemples en .ipynb</a></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation" dir="ltr">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a href="/">
+	<img src="/images/logoSN.png">
+</a>
+
+
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1719591774" defer></script>
+        <script src="/js/lunr/lunr.min.js?1719591774" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1719591774" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1719591774" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1719591774" defer></script>
+        <script src="/js/search.js?1719591774" defer></script>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics">
+          <li data-nav-id="/base-de-connaissances/index.html" class="dd-item"><a href="/base-de-connaissances/index.html">Base De Connaissances</a><ul id="subsections-20178e3fa8e2375eb4b5dcaa5e4bb059">
+          <li data-nav-id="/base-de-connaissances/markdown/index.html" class="dd-item"><a href="/base-de-connaissances/markdown/index.html">MarkDown</a></li>
+          <li data-nav-id="/base-de-connaissances/jupyter/index.html" class="dd-item"><a href="/base-de-connaissances/jupyter/index.html">Jupyter</a></li></ul></li>
+          <li data-nav-id="/cours/index.html" class="dd-item parent"><a href="/cours/index.html">Cours</a><ul id="subsections-2a099ab54b3d651b0702b70cc20b5850">
+          <li data-nav-id="/cours/bases-de-python/index.html" class="dd-item active"><a href="/cours/bases-de-python/index.html">Bases de Python</a></li>
+          <li data-nav-id="/cours/introduction-%C3%A0-la-programmation/index.html" class="dd-item"><a href="/cours/introduction-%C3%A0-la-programmation/index.html">Introduction à la programmation</a></li>
+          <li data-nav-id="/cours/les-chaines-de-caract%C3%A8res/index.html" class="dd-item"><a href="/cours/les-chaines-de-caract%C3%A8res/index.html">Les Chaines de caractères</a></li>
+          <li data-nav-id="/cours/les-librairies-syst%C3%A8mes/index.html" class="dd-item"><a href="/cours/les-librairies-syst%C3%A8mes/index.html">Les Librairies systèmes</a></li>
+          <li data-nav-id="/cours/les-listes/index.html" class="dd-item"><a href="/cours/les-listes/index.html">Les Listes</a></li>
+          <li data-nav-id="/cours/les-objets/index.html" class="dd-item"><a href="/cours/les-objets/index.html">Les Objets</a></li>
+          <li data-nav-id="/cours/les-structures-de-donn%C3%A9es/index.html" class="dd-item"><a href="/cours/les-structures-de-donn%C3%A9es/index.html">Les Structures de Données</a></li>
+          <li data-nav-id="/cours/ordinogramme/index.html" class="dd-item"><a href="/cours/ordinogramme/index.html">Ordinogramme</a></li>
+          <li data-nav-id="/cours/projet-fil-rouge/index.html" class="dd-item alwaysopen"><a href="/cours/projet-fil-rouge/index.html">Projet - Fil Rouge</a><ul id="subsections-71602ad2dd8503c6b2ed949ce70f0c96">
+          <li data-nav-id="/cours/projet-fil-rouge/partie-1/index.html" class="dd-item"><a href="/cours/projet-fil-rouge/partie-1/index.html">Projet - Partie 1</a></li>
+          <li data-nav-id="/cours/projet-fil-rouge/partie-2/index.html" class="dd-item"><a href="/cours/projet-fil-rouge/partie-2/index.html">Projet - Partie 2</a></li>
+          <li data-nav-id="/cours/projet-fil-rouge/partie-3/index.html" class="dd-item"><a href="/cours/projet-fil-rouge/partie-3/index.html">Projet - Partie 3</a></li>
+          <li data-nav-id="/cours/projet-fil-rouge/partie-4/index.html" class="dd-item"><a href="/cours/projet-fil-rouge/partie-4/index.html">Projet - Partie 4</a></li></ul></li>
+          <li data-nav-id="/cours/structures-conditionnelles/index.html" class="dd-item"><a href="/cours/structures-conditionnelles/index.html">Structures conditionnelles</a></li>
+          <li data-nav-id="/cours/la-r%C3%A9p%C3%A9tition---les-boucles/index.html" class="dd-item"><a href="/cours/la-r%C3%A9p%C3%A9tition---les-boucles/index.html">La répétition - Les boucles</a></li></ul></li>
+          <li data-nav-id="/outils/index.html" class="dd-item"><a href="/outils/index.html">Outils</a><ul id="subsections-72ad994f883591fb3ac19a0cce2ee066">
+          <li data-nav-id="/outils/vs-code--jupyter/index.html" class="dd-item"><a href="/outils/vs-code--jupyter/index.html">VS Code &amp; Jupyter</a></li></ul></li>
+        </ul>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/cours/bases-de-python/index.html" selected></option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="zen-dark" value="zen-dark" selected>Zen Dark</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</button></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1719591774" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1719591774" defer></script>
+    <script src="/js/featherlight.min.js?1719591774" defer></script>
+    <script src="/js/theme.js?1719591774" defer></script>
+  </body>
+</html>

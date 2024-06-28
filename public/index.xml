@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>420-SN1-A24</title>
+    <link>http://localhost:1313/index.html</link>
+    <description>Recent content on 420-SN1-A24</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Base De Connaissances</title>
+      <link>http://localhost:1313/base-de-connaissances/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/base-de-connaissances/index.html</guid>
+      <description>Ici se trouve quelques informations pouvant vous être utile pour votre session.</description>
+    </item>
+    <item>
+      <title>Cours</title>
+      <link>http://localhost:1313/cours/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cours/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Outils</title>
+      <link>http://localhost:1313/outils/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/outils/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

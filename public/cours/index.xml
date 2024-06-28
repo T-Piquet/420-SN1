@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cours on 420-SN1-A24</title>
+    <link>http://localhost:1313/cours/index.html</link>
+    <description>Recent content in Cours on 420-SN1-A24</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://localhost:1313/cours/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bases de Python</title>
+      <link>http://localhost:1313/cours/bases-de-python/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cours/bases-de-python/index.html</guid>
+      <description>Atelier Atelier sur les bases de python
+Exemples Exemples en .ipynb</description>
+    </item>
+    <item>
+      <title>Introduction à la programmation</title>
+      <link>http://localhost:1313/cours/introduction-%C3%A0-la-programmation/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cours/introduction-%C3%A0-la-programmation/index.html</guid>
+      <description>Cycle de développement logiciel Le cycle de développement d&amp;rsquo;un logiciel se décompose en plusieurs étapes que nous pouvons retrouver à travers ce schéma :
+Goffinet, F. (2021, 11 novembre). Concepts de développement logiciel.
+Le schéma représente un cercle fermé car un logiciel ne &amp;ldquo;meurt&amp;rdquo; jamais. Il est en constante évolution dû à des besoins utilisateurs grandissants.
+Algorithme Qu&amp;rsquo;est-ce qu&amp;rsquo;un algorithme ?
+Un algorithme est une suite d&amp;rsquo;actions qui suivent un ordre précis.</description>
+    </item>
+    <item>
+      <title>Les Chaines de caractères</title>
+      <link>http://localhost:1313/cours/les-chaines-de-caract%C3%A8res/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cours/les-chaines-de-caract%C3%A8res/index.html</guid>
+      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;une chaine de caractères ? Une chaine de caractères est simplement plusieurs caractères regroupés ensemble. Les caractères peuvent être des lettres, chiffres, symboles ou espaces. Les chaines de caractères sont des objets que nous pouvons manipuler. Nous pouvons concaténer des chaines, extraire ou chercher des sous-chaines, les modifier, etc&amp;hellip;
+En python, les chaines de caractères sont entourées de guillemets simples (&#39;) ou doubles (&amp;quot;):
+uneChaine = &amp;#39;Bonjour&amp;#39; uneAutre = &amp;#34;Allo&amp;#34; Les chaînes en Python sont immuables, ce qui signifie qu&amp;rsquo;une fois créées, elles ne peuvent pas être modifiées.</description>
+    </item>
+    <item>
+      <title>Les Librairies systèmes</title>
+      <link>http://localhost:1313/cours/les-librairies-syst%C3%A8mes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cours/les-librairies-syst%C3%A8mes/index.html</guid>
+      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;une Librairie système ? En Python, les librairies système fournissent des interfaces pour interagir avec le système d&amp;rsquo;exploitation et les ressources matérielles sous-jacentes.
+Une librairie système est un ensemble de modules et de fonctions fournies par le système d&amp;rsquo;exploitation ou par des bibliothèques externes qui permettent aux programmes :
+De communiquer avec le système d&amp;rsquo;exploitation D&amp;rsquo;accéder aux ressources matérielles De gérer des processus De manipuler des fichiers D&amp;rsquo;effectuer d&amp;rsquo;autres opérations système de bas niveau.</description>
+    </item>
+    <item>
+      <title>Les Listes</title>
+      <link>http://localhost:1313/cours/les-listes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cours/les-listes/index.html</guid>
+      <description>Pourquoi utiliser des listes ? Mise en situation Vous devez gérer les données des étudiants du cours. Chaque étudiant a un nom et un âge. Vous ne savez pas combien d&amp;rsquo;étudiants seront inscrits dans le cours. Vous devez afficher le nom de tous les étudiants et leur âge.
+Solution sans liste # On saisit chaque variable etudiant_01_nom = &amp;#34;Emma&amp;#34; etudiant_01_age = 18 etudiant_02_nom = &amp;#34;Julien&amp;#34; # .... etudiant_37_age = &amp;#34;20&amp;#34; # On affiche les noms et âge un par un print(etudiant_01_nom, etudiant_01_age) # .</description>
+    </item>
+    <item>
+      <title>Les Objets</title>
+      <link>http://localhost:1313/cours/les-objets/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cours/les-objets/index.html</guid>
+      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un objet ? En programmation, un objet est une structure qui regroupe des données et des méthodes qui manipulent ces données. Les objets sont la pierre angulaire de la programmation orientée objet (POO), un paradigme qui organise le code en entités réutilisables et modulaires.
+Concept Définition Classe Une classe est un plan ou un modèle pour créer des objets. Objet Un objet est une instance d&amp;rsquo;une classe. Attributs Les attributs sont des variables qui appartiennent à une classe ou à un objet.</description>
+    </item>
+    <item>
+      <title>Les Structures de Données</title>
+      <link>http://localhost:1313/cours/les-structures-de-donn%C3%A9es/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cours/les-structures-de-donn%C3%A9es/index.html</guid>
+      <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;une Structure de Donnée en Python ? Une structure de donnée avancée en Python fait référence à des collections ou des types de données qui permettent de stocker, organiser et manipuler des données de manière efficace.
+Nous avons déjà vu d&amp;rsquo;autres structures de données, soit les listes et les chaines de caractères.
+Maintenant, nous regarderons d&amp;rsquo;autres structures de données, soit les dictionnaires, les ensembles et les tuples:
+Les dictionnaires Les dictionnaires en Python sont des collections de paires clé-valeur.</description>
+    </item>
+    <item>
+      <title>Ordinogramme</title>
+      <link>http://localhost:1313/cours/ordinogramme/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cours/ordinogramme/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projet - Fil Rouge</title>
+      <link>http://localhost:1313/cours/projet-fil-rouge/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cours/projet-fil-rouge/index.html</guid>
+      <description>Projet - Fil rouge Le projet fil rouge est l&amp;rsquo;activité permettant d’évaluer l’atteinte de l’objectif intégrateur du cours. Il se déroulera sur les 5 dernières semaines de la session. Au cours des 4 premières semaines du projet, nous développerons un programme permettant d&amp;rsquo;explorer, analyser et visualiser des données scientifiques.
+Lors de la 5e semaine du projet (dernier cours de la session), vous serez évalués. Votre programme devra être terminé et fonctionnel avant la dernière séance de cours.</description>
+    </item>
+    <item>
+      <title>Structures conditionnelles</title>
+      <link>http://localhost:1313/cours/structures-conditionnelles/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cours/structures-conditionnelles/index.html</guid>
+      <description>Structures conditionnelles - if Au cours de son déroulement, un programme a besoin de prendre des décisions en fonction des données qu&amp;rsquo;il rencontre.
+Comment cela se traduit ?
+La condition est très souvent une opération de comparaison. Attention au : qui est primordial. C&amp;rsquo;est l&amp;rsquo;indentation (le décalage par rapport à la marge gauche) qui délimite le bloc d&amp;rsquo;instructions. La partie else est facultative. Exemple simple # Nous demandons à l&amp;#39;utilisateur de saisir un âge age = int(input(&amp;#34;Saisir votre âge :&amp;#34;)) # Nous testons l&amp;#39;âge à partir de la valeur saisie par l&amp;#39;utilisateur # Nous pouvons noter dans cet exemple la &amp;#34;condition&amp;#34; qui permet de définir, grâce à l&amp;#39;âge, si la personne est majeure ou mineure.</description>
+    </item>
+    <item>
+      <title>La répétition - Les boucles</title>
+      <link>http://localhost:1313/cours/la-r%C3%A9p%C3%A9tition---les-boucles/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cours/la-r%C3%A9p%C3%A9tition---les-boucles/index.html</guid>
+      <description>Cours La répétition en informatique Un des avantages de l&amp;rsquo;informatique est qu&amp;rsquo;on est capable de traiter énormément d&amp;rsquo;information en très peu de temps. Et ce traitement est souvent le même, mais avec des données différentes.
+Par exemple, on a un relevé quotidien de température d&amp;rsquo;une station météo et on souhaite calculer la température moyenne de chaque semaine de l&amp;rsquo;année. Dans ce cas, il faut répéter 52 fois une moyenne de 7 températures.</description>
+    </item>
+  </channel>
+</rss>

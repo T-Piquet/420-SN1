@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.1">
+    <meta name="generator" content="Relearn 5.9.4">
+    <meta name="description" content="">
+    <title>Les Librairies systèmes :: 420-SN1-A24</title>
+    <link href="/cours/les-librairies-syst%C3%A8mes/index.xml" rel="alternate" type="application/rss+xml" title="Les Librairies systèmes :: 420-SN1-A24">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1719591774" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1719591774" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1719591774" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1719591774" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1719591774" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1719591774" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1719591774" rel="stylesheet">
+    <link href="/css/nucleus.css?1719591774" rel="stylesheet">
+    <link href="/css/fonts.css?1719591774" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1719591774" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1719591774" rel="stylesheet">
+    <link href="/css/theme-zen-dark.css?1719591774" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1719591774" rel="stylesheet">
+    <link href="/css/variant.css?1719591774" rel="stylesheet">
+    <link href="/css/print.css?1719591774" rel="stylesheet" media="print">
+    <script src="/js/url.js?1719591774"></script>
+    <script src="/js/variant.js?1719591774"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='http:\/\/localhost:1313/';
+      window.variants && variants.init( [ 'zen-dark' ] );
+    </script>
+    <script src="/js/jquery.min.js?1719591774" defer></script>
+  </head>
+  <body class="mobile-support html" data-url="/cours/les-librairies-syst%C3%A8mes/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable" dir="ltr">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next" href="/cours/les-listes/index.html" title="Les Listes (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev" href="/cours/les-chaines-de-caract%C3%A8res/index.html" title="Les Chaines de caractères (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">420-SN1-A24</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/cours/index.html"><span itemprop="name">Cours</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Les Librairies systèmes</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper" dir="ltr">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#exemple">Exemple</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#fichiers-et-répertoires">Fichiers et Répertoires</a>
+      <ul>
+        <li><a href="#quest-ce-quun-fichier-">Qu&rsquo;est-ce qu&rsquo;un fichier ?</a></li>
+        <li><a href="#quest-ce-quun-répertoire-">Qu&rsquo;est-ce qu&rsquo;un répertoire ?</a></li>
+        <li><a href="#organisation-des-fichiers-et-des-répertoires">Organisation des fichiers et des répertoires</a></li>
+      </ul>
+    </li>
+    <li><a href="#gestion-de-fichiers-et-répertoires">Gestion de fichiers et répertoires</a>
+      <ul>
+        <li><a href="#lister-les-fichiers-et-les-répertoires">Lister les fichiers et les répertoires</a></li>
+        <li><a href="#créer-un-répertoire">Créer un répertoire</a></li>
+        <li><a href="#combiner-des-composants-de-chemin">Combiner des composants de chemin</a></li>
+        <li><a href="#vérifier-si-un-chemin-est-un-fichierrépertoire">Vérifier si un chemin est un fichier/répertoire</a></li>
+        <li><a href="#supprimer-un-fichierrépertoire">Supprimer un fichier/répertoire</a></li>
+      </ul>
+    </li>
+    <li><a href="#gestion-de-processus">Gestion de processus</a>
+      <ul>
+        <li><a href="#exécuter-une-commande-système">Exécuter une commande système</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#les-arguments">Les arguments</a></li>
+        <li><a href="#sortir-du-programme">Sortir du programme</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article class="default">
+<h1 id="les-librairies-syst%C3%A8mes">Les Librairies systèmes</h1>
+
+<p>
+		
+<a href="/cours/les-librairies-syst%C3%A8mes/librairies.png?width=25vw" data-featherlight="image">
+<img src="/cours/les-librairies-syst%C3%A8mes/librairies.png?width=25vw" alt="" style="height: auto; width: 25vw;" loading="lazy">
+</a></p>
+<h1 id="quest-ce-quune-librairie-système-">Qu&rsquo;est-ce qu&rsquo;une Librairie système ?</h1>
+<p>En Python, les librairies système fournissent des interfaces pour interagir avec le système d&rsquo;exploitation et les ressources matérielles sous-jacentes.</p>
+<p>Une librairie système est un ensemble de modules et de fonctions fournies par le système d&rsquo;exploitation ou par des bibliothèques externes qui permettent aux programmes :</p>
+<ul>
+<li>De communiquer avec le système d&rsquo;exploitation</li>
+<li>D&rsquo;accéder aux ressources matérielles</li>
+<li>De gérer des processus</li>
+<li>De manipuler des fichiers</li>
+<li>D&rsquo;effectuer d&rsquo;autres opérations système de bas niveau.</li>
+</ul>
+<h2 id="exemple">Exemple</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os  <span style="color:#75715e"># importation de la librairie os</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(os<span style="color:#f92672">.</span>listdir(<span style="color:#e6db74">&#39;.&#39;</span>))  <span style="color:#75715e"># Liste les fichiers dans le répertoire courant</span>
+</span></span><span style="display:flex;"><span>os<span style="color:#f92672">.</span>mkdir(<span style="color:#e6db74">&#34;foo&#34;</span>)         <span style="color:#75715e"># Crée le répertoire foo</span>
+</span></span></code></pre></div><h1 id="librairie-os">Librairie os</h1>
+<p>Ce module permet d&rsquo;utiliser les fonctionnalités dépendantes du système d&rsquo;exploitation telles que :</p>
+<ul>
+<li>La gestion des fichiers et des répertoires</li>
+<li>L&rsquo;exécution de commandes système</li>
+</ul>
+<p>Il faut d&rsquo;abord importer la librairie :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span></code></pre></div><h2 id="fichiers-et-répertoires">Fichiers et Répertoires</h2>
+<h3 id="quest-ce-quun-fichier-">Qu&rsquo;est-ce qu&rsquo;un fichier ?</h3>
+<p>Un fichier est une unité de stockage sur un ordinateur. Pensez à un fichier comme à une feuille de papier où vous pouvez écrire des informations. Les fichiers peuvent contenir différents types de données, comme du texte, des images, de la musique, des vidéos, ou des programmes.</p>
+<h3 id="quest-ce-quun-répertoire-">Qu&rsquo;est-ce qu&rsquo;un répertoire ?</h3>
+<p>Un répertoire, aussi appelé dossier, est un conteneur qui peut contenir des fichiers et d&rsquo;autres répertoires. Imaginez un répertoire comme un classeur où vous pouvez organiser vos feuilles de papier (fichiers) en différentes sections (sous-dossiers).</p>
+<h3 id="organisation-des-fichiers-et-des-répertoires">Organisation des fichiers et des répertoires</h3>
+<p>Les fichiers et les répertoires sont organisés dans une structure hiérarchique, souvent comparée à un arbre :</p>
+<ul>
+<li><strong>Répertoire racine</strong> : Le répertoire principal qui contient tous les autres fichiers et répertoires. Sur Windows, il est souvent appelé <code>C:\</code>. Sur macOS et Linux, il est appelé <code>/</code>.</li>
+<li><strong>Sous-répertoires</strong> : Répertoires à l&rsquo;intérieur d&rsquo;autres répertoires. Ils permettent d&rsquo;organiser les fichiers de manière logique. Par exemple, un répertoire <code>Documents</code> peut contenir des sous-répertoires pour des <code>projets</code>, des <code>factures</code>, etc.</li>
+<li><strong>Chemin d&rsquo;accès</strong> : La manière dont on désigne l&rsquo;emplacement d&rsquo;un fichier ou d&rsquo;un répertoire. Par exemple, le chemin d&rsquo;accès à une vidéo peut être <code>C:\Vidéo\Archives\video_01.mkv</code> sur Windows.</li>
+</ul>
+<p>
+<a href="/cours/les-librairies-syst%C3%A8mes/fichier_01.png" data-featherlight="image">
+<img src="/cours/les-librairies-syst%C3%A8mes/fichier_01.png" alt="" style="height: auto; width: auto;" loading="lazy">
+</a></p>
+<p>Dans cet exemple, <code>Image</code>, <code>Musique</code> et <code>Vidéo</code> sont es sous-répertoire de <code>Racine</code>.<br>
+Le répertoire <code>Vidéo</code> contient un sous-répertoire <code>Archives</code> et un fichier <code>video_03.mkv</code>.<br>
+Le répertoire <code>Musique</code> est vide.</p>
+<h4 id="chemins-relatif-vs-absolu">Chemins relatif vs absolu</h4>
+<p>Un <strong>chemin absolu</strong> part toujours de la racine.<br>
+Exemple:</p>
+<ul>
+<li><code>C:\Vidéo\Archives\video_01.mkv</code></li>
+</ul>
+<p>Un <strong>chemin relatif</strong> part d&rsquo;où nous sommes. Par exemple, si un programme est exécuté dans le répertoire <code>Vidéo</code>, son point de départ sera <code>Vidéo</code>. Les <code>..</code> permettront de remonter au répertoire parent.<br>
+Exemples (à partir de <code>Vidéo</code>):</p>
+<ul>
+<li>Pour accéder à <code>video_01.mkv</code>: <code>.\Archives\video_01.mkv</code></li>
+<li>Pour accéder à <code>image_01.png</code>: <code>..\Image\image_01.png</code></li>
+</ul>
+<h2 id="gestion-de-fichiers-et-répertoires">Gestion de fichiers et répertoires</h2>
+<h3 id="lister-les-fichiers-et-les-répertoires">Lister les fichiers et les répertoires</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>liste <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>listdir()   <span style="color:#75715e"># liste des fichiers/répertoires du répertoire courant</span>
+</span></span><span style="display:flex;"><span>liste <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>listdir(<span style="color:#e6db74">&#39;foo&#39;</span>)   <span style="color:#75715e"># liste des fichiers/répertoires du sous-répertoire &#34;foo&#34;</span>
+</span></span><span style="display:flex;"><span>liste <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>listdir(<span style="color:#e6db74">&#39;..&#39;</span>)   <span style="color:#75715e"># liste des fichiers/répertoires du répertoire parent</span>
+</span></span><span style="display:flex;"><span>liste <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>listdir(<span style="color:#e6db74">&#39;C:\Vidéo\Archives&#39;</span>)   <span style="color:#75715e"># liste des fichiers/répertoires du répertoire &#34;Archives&#34;</span>
+</span></span></code></pre></div><h3 id="créer-un-répertoire">Créer un répertoire</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>os<span style="color:#f92672">.</span>mkdir(<span style="color:#e6db74">&#39;nouveau_repertoire&#39;</span>)  <span style="color:#75715e"># Crée le répertoire &#34;nouveau_repertoire&#34; dans le répertoire courant</span>
+</span></span></code></pre></div><h3 id="combiner-des-composants-de-chemin">Combiner des composants de chemin</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>chemin <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(<span style="color:#e6db74">&#39;repertoire&#39;</span>, <span style="color:#e6db74">&#39;fichier.txt&#39;</span>)  <span style="color:#75715e"># Crée le chemin à partir des chaines &#34;repertoire&#34; et &#34;fichier.txt&#34;</span>
+</span></span></code></pre></div><p><code>os.path.join</code> prend en compte le système d&rsquo;exploitation pour combiner les composantes du chemin.<br>
+Sous Windows, <code>chemin</code> sera <code>repertoire\fichier.txt</code>, tandis que sous Linux, il sera <code>repertoire/fichier.txt</code>.<br>
+Ce qui permettra à ce programme s&rsquo;exécuter peu importe le système d&rsquo;exploitation.</p>
+<h3 id="vérifier-si-un-chemin-est-un-fichierrépertoire">Vérifier si un chemin est un fichier/répertoire</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>estFichier <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>isfile(<span style="color:#e6db74">&#39;repertoire/fichier.txt&#39;</span>)   <span style="color:#75715e"># Retourne Vrai si le fichier existe, sinon Faux</span>
+</span></span><span style="display:flex;"><span>estRepertoire <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>isdir(<span style="color:#e6db74">&#39;repertoire&#39;</span>)   <span style="color:#75715e"># Retourne Vrai si le répertoire existe, sinon Faux</span>
+</span></span></code></pre></div><p>La fonction <code>os.path.exists()</code> est plus générale et indique si le chemin existe. Cette fonction est très utilise pour éviter les erreurs:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>exists(<span style="color:#e6db74">&#39;repertoire/fichier.txt&#39;</span>):        <span style="color:#75715e"># Si le fichier n&#39;existe pas, la lecture n&#39;aura pas lieu</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;repertoire/fichier.txt&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>) <span style="color:#66d9ef">as</span> fichier:
+</span></span><span style="display:flex;"><span>        contenu <span style="color:#f92672">=</span> fichier<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>    print(contenu)
+</span></span></code></pre></div><h3 id="supprimer-un-fichierrépertoire">Supprimer un fichier/répertoire</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>os<span style="color:#f92672">.</span>remove(<span style="color:#e6db74">&#39;fichier.txt&#39;</span>)    <span style="color:#75715e"># Supprime le fichier &#34;fichier.txt&#34;</span>
+</span></span><span style="display:flex;"><span>os<span style="color:#f92672">.</span>rmdir(<span style="color:#e6db74">&#39;repertoire&#39;</span>)   <span style="color:#75715e"># Supprime le répertoire &#34;repertoire&#34; et tout ce qui se trouve à l&#39;intérieur</span>
+</span></span></code></pre></div><h2 id="gestion-de-processus">Gestion de processus</h2>
+<h3 id="exécuter-une-commande-système">Exécuter une commande système</h3>
+<p>La fonction <code>os.system()</code> permet d&rsquo;exécuter des commandes système.
+Les commandes système sont dépendantes de votre système d&rsquo;exploitation (ex: Windows vs Linux).
+Donc, les commandes devront être ajustées en conséquence.</p>
+<p>Par exemple, sous Windows, la commande <code>dir</code> permet d&rsquo;obtenir la liste des fichiers et répertoires. Tandis que sous Linux, la commande est <code>ls</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>os<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#39;ls&#39;</span>)      <span style="color:#75715e"># Liste des fichiers et répertoire sous Linux</span>
+</span></span><span style="display:flex;"><span>os<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#39;dir&#39;</span>)     <span style="color:#75715e"># Liste des fichiers et répertoire sous Windows</span>
+</span></span></code></pre></div><p>Cet exemple est seulement pour illustrer la différence entre les systèmes d&rsquo;exploitation.
+Il aurait été préférable d&rsquo;utiliser la commande <code>os.listdir()</code> qui a la même fonctionnalité que <code>ls</code> ou <code>dir</code>, mais fonctionne sur toutes les plateformes.</p>
+<p>Il est possible d&rsquo;exécuter d&rsquo;autres programmes à l&rsquo;aide la de commande <code>os.system()</code>. Par exemple, il est possible d&rsquo;exécuter une autre script <code>Python</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># premierProgramme.py</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;Bonjour&#39;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># deuxiemeProgramme.py</span>
+</span></span><span style="display:flex;"><span>os<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#39;python premierProgramme.py&#39;</span>)
+</span></span></code></pre></div><p>Si on exécute <code>deuxiemeProgramme.py</code>, celui-ci appellera à son tour le programme <code>premierProgramme.py</code> qui lui affichera <code>Bonjour</code>.</p>
+<h1 id="librairie-sys">Librairie sys</h1>
+<p>Ce module fournit des fonctions et des variables utilisées pour manipuler différentes parties de l&rsquo;environnement d&rsquo;exécution Python, telles que les arguments de la ligne de commande, les variables d&rsquo;environnement, le chemin de recherche de modules, etc.</p>
+<h3 id="les-arguments">Les arguments</h3>
+<p>Il est possible de lancer un programme python avec des arguments. On utilise <code>sys.argv</code> pour accéder à ceux-ci. <code>sys.argv</code> est une liste contenant les arguments sous forme de chaine de caractères (<code>string</code>). La première valeur est le nom du programme.<br>
+Exemple:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># addition.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Programme utilisant des arguments</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Programme:&#34;</span>, sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">0</span>])    <span style="color:#75715e"># Affichera le nom du programme, soit &#34;addition.py&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nombre_1 <span style="color:#f92672">=</span> int(sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>])         <span style="color:#75715e"># &#34;nombre_1&#34; devient la valeur numérique du 1er argument</span>
+</span></span><span style="display:flex;"><span>nombre_2 <span style="color:#f92672">=</span> int(sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">2</span>])         <span style="color:#75715e"># &#34;nombre_2&#34; devient la valeur numérique du 2e argument</span>
+</span></span><span style="display:flex;"><span>reponse <span style="color:#f92672">=</span> nombre_1 <span style="color:#f92672">+</span> nombre_2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Réponse:&#34;</span>, reponse)
+</span></span></code></pre></div><p><a href="addition.py">addition.py</a></p>
+<p>Pour lancer le programme à la ligne de commande:</p>
+<pre tabindex="0"><code># Windows
+python addition.py 2 3      # Devrait donner la réponse 5
+
+# Linux
+python3 addition.py 2 3      
+</code></pre><p>Essayez de lancer le programme sans argument.<br>
+Modifiez le programme pour éviter cette erreur.</p>
+<h3 id="sortir-du-programme">Sortir du programme</h3>
+<p>Si tout ce passe bien, les programmes terminent normalement lorsqu&rsquo;il n&rsquo;y a plus de code à exécuter.<br>
+Dans ce cas, le programme retournera la valeur <code>0</code>.<br>
+Si une erreur se produit en cours d&rsquo;exécution et que le programme s&rsquo;arrête anormalement, une valeur différente de <code>0</code> sera retournée.<br>
+L&rsquo;utilisateur du programme pourra utiliser la documentation pour connaître la signification de ce code d&rsquo;erreur.</p>
+<p>La fonction <code>sys.exit()</code> permet de sortir du programme immédiatement en retournant un code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># addition_2.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Programme utilisant des arguments</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Programme:&#34;</span>, sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">0</span>])    <span style="color:#75715e"># Affichera le nom du programme, soit &#34;addition.py&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> len(sys<span style="color:#f92672">.</span>argv) <span style="color:#f92672">!=</span> <span style="color:#ae81ff">3</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Vous devez fournir 2 arguments pour l&#39;addition&#34;</span>)
+</span></span><span style="display:flex;"><span>    sys<span style="color:#f92672">.</span>exit(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>isdigit() <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">2</span>]<span style="color:#f92672">.</span>isdigit():
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Vous devez fournir des arguments numériques pour l&#39;addition&#34;</span>)
+</span></span><span style="display:flex;"><span>    sys<span style="color:#f92672">.</span>exit(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nombre_1 <span style="color:#f92672">=</span> int(sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>])         <span style="color:#75715e"># &#34;nombre_1&#34; devient la valeur numérique du 1er argument</span>
+</span></span><span style="display:flex;"><span>nombre_2 <span style="color:#f92672">=</span> int(sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">2</span>])         <span style="color:#75715e"># &#34;nombre_2&#34; devient la valeur numérique du 2e argument</span>
+</span></span><span style="display:flex;"><span>reponse <span style="color:#f92672">=</span> nombre_1 <span style="color:#f92672">+</span> nombre_2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Réponse:&#34;</span>, reponse)
+</span></span></code></pre></div><p><a href="addition_2.py">addition_2.py</a></p>
+<p>Exemple :</p>
+<pre tabindex="0"><code># Windows
+python addition_2.py 2 3        # Devrait donner la réponse 5
+echo %ERRORLEVEL%               # Devrait donner 0
+
+python addition_2.py 2          # Erreur
+echo %ERRORLEVEL%               # Devrait donner 1
+
+python addition_2.py 2 a        # Erreur
+echo %ERRORLEVEL%               # Devrait donner 2
+
+
+
+# Linux
+python3 addition_2.py 2         # Erreur
+echo $?                         # Devrait donner 1
+</code></pre><h1 id="valeur-maximale">Valeur Maximale</h1>
+<p>En python, la valeur maximale d&rsquo;un <code>int</code> est de 9223372036854775807.
+Il est possible d&rsquo;utiliser cette valeur à l&rsquo;aide de <code>sys.maxsize</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;Maximum :&#39;</span>, sys<span style="color:#f92672">.</span>maxsize)   <span style="color:#75715e"># Affiche 9223372036854775807</span>
+</span></span></code></pre></div><p>Exemple d&rsquo;utilisation pour trouver la valeur minimale dans une liste:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>maListe <span style="color:#f92672">=</span> [<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">6</span>]
+</span></span><span style="display:flex;"><span>minimumTrouve <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>maxsize       <span style="color:#75715e"># On initialise minimumTrouve avec une très grande valeur</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> val <span style="color:#f92672">in</span> maListe:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> val <span style="color:#f92672">&lt;</span> minimumTrouve:
+</span></span><span style="display:flex;"><span>        minimumTrouve <span style="color:#f92672">=</span> val
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La valeur minimale est :&#34;</span>, minimumTrouve)
+</span></span></code></pre></div><h1 id="ateliers">Ateliers</h1>
+<p><a href="atelier_librairies.ipynb">Atelier sur les librairies</a></p>
+<h1 id="exemples">Exemples</h1>
+<p><a href="atelier_librairies.ipynb">Exemples en .ipynb</a></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation" dir="ltr">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a href="/">
+	<img src="/images/logoSN.png">
+</a>
+
+
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1719591774" defer></script>
+        <script src="/js/lunr/lunr.min.js?1719591774" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1719591774" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1719591774" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1719591774" defer></script>
+        <script src="/js/search.js?1719591774" defer></script>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics">
+          <li data-nav-id="/base-de-connaissances/index.html" class="dd-item"><a href="/base-de-connaissances/index.html">Base De Connaissances</a><ul id="subsections-20178e3fa8e2375eb4b5dcaa5e4bb059">
+          <li data-nav-id="/base-de-connaissances/markdown/index.html" class="dd-item"><a href="/base-de-connaissances/markdown/index.html">MarkDown</a></li>
+          <li data-nav-id="/base-de-connaissances/jupyter/index.html" class="dd-item"><a href="/base-de-connaissances/jupyter/index.html">Jupyter</a></li></ul></li>
+          <li data-nav-id="/cours/index.html" class="dd-item parent"><a href="/cours/index.html">Cours</a><ul id="subsections-2a099ab54b3d651b0702b70cc20b5850">
+          <li data-nav-id="/cours/bases-de-python/index.html" class="dd-item"><a href="/cours/bases-de-python/index.html">Bases de Python</a></li>
+          <li data-nav-id="/cours/introduction-%C3%A0-la-programmation/index.html" class="dd-item"><a href="/cours/introduction-%C3%A0-la-programmation/index.html">Introduction à la programmation</a></li>
+          <li data-nav-id="/cours/les-chaines-de-caract%C3%A8res/index.html" class="dd-item"><a href="/cours/les-chaines-de-caract%C3%A8res/index.html">Les Chaines de caractères</a></li>
+          <li data-nav-id="/cours/les-librairies-syst%C3%A8mes/index.html" class="dd-item active"><a href="/cours/les-librairies-syst%C3%A8mes/index.html">Les Librairies systèmes</a></li>
+          <li data-nav-id="/cours/les-listes/index.html" class="dd-item"><a href="/cours/les-listes/index.html">Les Listes</a></li>
+          <li data-nav-id="/cours/les-objets/index.html" class="dd-item"><a href="/cours/les-objets/index.html">Les Objets</a></li>
+          <li data-nav-id="/cours/les-structures-de-donn%C3%A9es/index.html" class="dd-item"><a href="/cours/les-structures-de-donn%C3%A9es/index.html">Les Structures de Données</a></li>
+          <li data-nav-id="/cours/ordinogramme/index.html" class="dd-item"><a href="/cours/ordinogramme/index.html">Ordinogramme</a></li>
+          <li data-nav-id="/cours/projet-fil-rouge/index.html" class="dd-item alwaysopen"><a href="/cours/projet-fil-rouge/index.html">Projet - Fil Rouge</a><ul id="subsections-71602ad2dd8503c6b2ed949ce70f0c96">
+          <li data-nav-id="/cours/projet-fil-rouge/partie-1/index.html" class="dd-item"><a href="/cours/projet-fil-rouge/partie-1/index.html">Projet - Partie 1</a></li>
+          <li data-nav-id="/cours/projet-fil-rouge/partie-2/index.html" class="dd-item"><a href="/cours/projet-fil-rouge/partie-2/index.html">Projet - Partie 2</a></li>
+          <li data-nav-id="/cours/projet-fil-rouge/partie-3/index.html" class="dd-item"><a href="/cours/projet-fil-rouge/partie-3/index.html">Projet - Partie 3</a></li>
+          <li data-nav-id="/cours/projet-fil-rouge/partie-4/index.html" class="dd-item"><a href="/cours/projet-fil-rouge/partie-4/index.html">Projet - Partie 4</a></li></ul></li>
+          <li data-nav-id="/cours/structures-conditionnelles/index.html" class="dd-item"><a href="/cours/structures-conditionnelles/index.html">Structures conditionnelles</a></li>
+          <li data-nav-id="/cours/la-r%C3%A9p%C3%A9tition---les-boucles/index.html" class="dd-item"><a href="/cours/la-r%C3%A9p%C3%A9tition---les-boucles/index.html">La répétition - Les boucles</a></li></ul></li>
+          <li data-nav-id="/outils/index.html" class="dd-item"><a href="/outils/index.html">Outils</a><ul id="subsections-72ad994f883591fb3ac19a0cce2ee066">
+          <li data-nav-id="/outils/vs-code--jupyter/index.html" class="dd-item"><a href="/outils/vs-code--jupyter/index.html">VS Code &amp; Jupyter</a></li></ul></li>
+        </ul>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/cours/les-librairies-syst%C3%A8mes/index.html" selected></option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="zen-dark" value="zen-dark" selected>Zen Dark</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</button></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1719591774" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1719591774" defer></script>
+    <script src="/js/featherlight.min.js?1719591774" defer></script>
+    <script src="/js/theme.js?1719591774" defer></script>
+  </body>
+</html>

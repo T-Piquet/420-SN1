@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.1">
+    <meta name="generator" content="Relearn 5.9.4">
+    <meta name="description" content="">
+    <title>La répétition - Les boucles :: 420-SN1-A24</title>
+    <link href="/cours/la-r%C3%A9p%C3%A9tition---les-boucles/index.xml" rel="alternate" type="application/rss+xml" title="La répétition - Les boucles :: 420-SN1-A24">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1719591774" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1719591774" rel="stylesheet"></noscript>
+    <link href="/css/featherlight.min.css?1719591774" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/featherlight.min.css?1719591774" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1719591774" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1719591774" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1719591774" rel="stylesheet">
+    <link href="/css/nucleus.css?1719591774" rel="stylesheet">
+    <link href="/css/fonts.css?1719591774" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1719591774" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1719591774" rel="stylesheet">
+    <link href="/css/theme-zen-dark.css?1719591774" rel="stylesheet" id="variant-style">
+    <link href="/css/ie.css?1719591774" rel="stylesheet">
+    <link href="/css/variant.css?1719591774" rel="stylesheet">
+    <link href="/css/print.css?1719591774" rel="stylesheet" media="print">
+    <script src="/js/url.js?1719591774"></script>
+    <script src="/js/variant.js?1719591774"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='http:\/\/localhost:1313/';
+      window.variants && variants.init( [ 'zen-dark' ] );
+    </script>
+    <script src="/js/jquery.min.js?1719591774" defer></script>
+  </head>
+  <body class="mobile-support html" data-url="/cours/la-r%C3%A9p%C3%A9tition---les-boucles/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable" dir="ltr">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next" href="/outils/index.html" title="Outils (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev" href="/cours/structures-conditionnelles/index.html" title="Structures conditionnelles (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">420-SN1-A24</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/cours/index.html"><span itemprop="name">Cours</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">La répétition - Les boucles</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper" dir="ltr">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#la-répétition-en-informatique">La répétition en informatique</a></li>
+    <li><a href="#boucle-while">Boucle while</a>
+      <ul>
+        <li><a href="#boucle-infinie">Boucle infinie</a></li>
+      </ul>
+    </li>
+    <li><a href="#boucle-for">Boucle for</a>
+      <ul>
+        <li><a href="#linstruction-range">L&rsquo;instruction range</a></li>
+        <li><a href="#linstruction-break">L&rsquo;instruction break</a></li>
+      </ul>
+    </li>
+    <li><a href="#imbrication-de-boucles">Imbrication de boucles</a></li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article class="default">
+<h1 id="la-r%C3%A9p%C3%A9tition-les-boucles">La répétition - Les boucles</h1>
+
+<h1 id="cours">Cours</h1>
+<h2 id="la-répétition-en-informatique">La répétition en informatique</h2>
+<p>Un des avantages de l&rsquo;informatique est qu&rsquo;on est capable de traiter énormément d&rsquo;information en très peu de temps. Et ce traitement est souvent le même, mais avec des données différentes.</p>
+<p>Par exemple, on a un relevé quotidien de température d&rsquo;une station météo et on souhaite calculer la température moyenne de chaque semaine de l&rsquo;année. Dans ce cas, il faut répéter 52 fois une moyenne de 7 températures.</p>
+<p>Un autre exemple, si on a un modèle météorologique et que l&rsquo;on souhaite tester la relation entre le niveau de CO2 dans l&rsquo;atmosphère et l&rsquo;augmentation de la température terrestre. Dans ce cas, il faudra exécuter un grand nombre de simulations en faisant varier le niveau CO2 dans l&rsquo;atmosphère pour obtenir la température correspondante. On répètera la simulation le nombre fois nécessaire pour couvrir l&rsquo;amplitude choisie.</p>
+<p>Imaginez qu&rsquo;on souhaite demander à l&rsquo;utilisateur de saisir le prix unitaire d&rsquo;un produit, mais que ce prix ne doit pas être négatif. Donc <strong>tant que</strong> le prix unitaire fourni est négatif, il faut redemander une nouvelle valeur à l&rsquo;utilisateur.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>prix_unitaire <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Entrez le prix unitaire: &#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> prix_unitaire <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">&#34;Un prix ne peut être négatif&#34;</span>)
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	prix_unitaire <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Entrez le prix unitaire: &#34;</span>))
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> prix_unitaire <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">&#34;Un prix ne peut être négatif&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		prix_unitaire <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Entrez le prix unitaire: &#34;</span>))
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> prix_unitaire <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>			print(<span style="color:#e6db74">&#34;Un prix ne peut être négatif&#34;</span>)
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e">#...</span>
+</span></span></code></pre></div><p>On voit que sans structure de répétition, on peut continuer cette imbrication de <code>if</code> à l&rsquo;infini.</p>
+<h2 id="boucle-while">Boucle while</h2>
+
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fa-fw fas fa-lightbulb"></i> Tip</div>
+  <div class="box-content">
+<p>La boucle <code>while</code> est pratique pour faire des boucles où on ne sait pas combien de fois on va devoir répéter des instructions. Typiquement avec des saisies utilisateurs. <strong>Il faut une condition de sortie</strong>.</p>
+  </div>
+</div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>prix_unitaire <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Entrez le prix unitaire: &#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> prix_unitaire <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">&#34;Un prix ne peut être négatif&#34;</span>)
+</span></span><span style="display:flex;"><span>	prix_unitaire <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Entrez le prix unitaire: &#34;</span>))
+</span></span></code></pre></div><p>TODO: ajouter ordinogramme</p>
+<p>La boucle <code>while</code> répète les instructions <strong>tant que</strong> une certaine condition est remplie. La condition de bouclage prend exactement la même forme que les conditions avec l&rsquo;instruction <code>if</code>. Vous pouvez donc créer des conditions complexes pour sortir de la boucle.</p>
+<p>Par exemple, on peut modifier la condition pour autoriser seulement les prix unitaires entre 0 et 1000.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>prix_unitaire <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Entrez le prix unitaire: &#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> prix_unitaire <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> prix_unitaire <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1000</span>:
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">&#34;Un prix ne peut être négatif, ou supéieur a 1000&#34;</span>)
+</span></span><span style="display:flex;"><span>	prix_unitaire <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Entrez le prix unitaire: &#34;</span>))
+</span></span></code></pre></div><p>La forme générique de l&rsquo;instruction <code>while</code> est :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#f92672">&lt;</span>condition<span style="color:#f92672">&gt;</span>:
+</span></span><span style="display:flex;"><span>	instruction1
+</span></span><span style="display:flex;"><span>	instruction2
+</span></span><span style="display:flex;"><span>	instruction3
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">...</span>
+</span></span></code></pre></div><h3 id="boucle-infinie">Boucle infinie</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> true:
+</span></span><span style="display:flex;"><span>	instruction1
+</span></span><span style="display:flex;"><span>	instruction2
+</span></span><span style="display:flex;"><span>	instruction3
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>Pour sortir d&rsquo;une boucle infinie, il faut utiliser le clavier et taper les touches <code>ctrl+c</code></p>
+<h2 id="boucle-for">Boucle for</h2>
+
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fa-fw fas fa-lightbulb"></i> Tip</div>
+  <div class="box-content">
+<p>La boucle <code>for</code> est pratique pour faire des boucles où on sait à l&rsquo;avance combien de fois on va devoir répéter des instructions. Typiquement pour le traitement de données, on connait à l&rsquo;avance le nombre de données que l&rsquo;on va analyser. <strong>Il faut une liste d&rsquo;éléments</strong>.</p>
+  </div>
+</div>
+<p>La forme générale de la boucle <code>for</code> est :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> variable <span style="color:#f92672">in</span> range(n):
+</span></span><span style="display:flex;"><span>	instruction1
+</span></span><span style="display:flex;"><span>	instruction2
+</span></span><span style="display:flex;"><span>	instruction3
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>La boucle <code>for</code> est basée sur une variable d&rsquo;itération. Cette variable peut être utilisée dans les instructions de la boucle. Et cette variable prend les valeurs générées par l&rsquo;instruction <code>range()</code></p>
+<h3 id="linstruction-range">L&rsquo;instruction range</h3>
+<blockquote>
+<p>Que fait le code suivant ?</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>		print(i)
+</span></span></code></pre></div><p><code>range</code> est une instruction qui permet de générer une suite de nombre avec lesquels nous allons faire nos répétitions.</p>
+<p>La forme générale de la fonction est : <code>range(début, fin, pas)</code></p>
+<p>Si 1 seul paramètre est spécifié, il s&rsquo;agit du paramètre <code>fin</code>. Dans ce cas <code>début = 0</code> et <code>pas = 1</code>.</p>
+<pre tabindex="0"><code>range(10)
+=&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+</code></pre><p>Si 2 paramètres sont spécifiés, il s&rsquo;agit des paramètres <code>début</code> et <code>fin</code>. Dans ce cas <code>pas = 1</code>.</p>
+<pre tabindex="0"><code>range(4, 10)
+=&gt; [4, 5, 6, 7, 8, 9]
+</code></pre><p>Avec les 3 paramètres spécifiés, on peut obtenir ce genre de résultat :</p>
+<pre tabindex="0"><code>range(2, 100, 10)
+=&gt; [2, 12, 22, 32, 42, 52, 62, 72, 82, 92]
+</code></pre><blockquote>
+<p>Que fait le code suivant ?</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>):
+</span></span><span style="display:flex;"><span>	print(i)
+</span></span></code></pre></div><h3 id="linstruction-break">L&rsquo;instruction break</h3>
+<p>Lorsque l&rsquo;on parcourt un grand ensemble de données avec une boucle <code>for</code>, on peut vouloir arrêter les calculs si jamais une valeur ne fait pas de sens.</p>
+<p>Par exemple, une donnée négative dans un relevé démographique. Dans ce cas, l&rsquo;instruction <code>break</code> va interrompre la boucle.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(taille_des_donnees):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> data[i] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">&#34;Erreur: population négative&#34;</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>	instruction1
+</span></span><span style="display:flex;"><span>	instruction2
+</span></span><span style="display:flex;"><span>	instruction3
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>Dans cet exemple, si la population est négative, on alerte l&rsquo;usagé et on sort de la boucle pour ne par exécuter les instructions suivantes.</p>
+<h2 id="imbrication-de-boucles">Imbrication de boucles</h2>
+<p>Une instruction de bouclage reste une instruction comme les autres, on peut les enchainer les unes dans les autres.</p>
+<blockquote>
+<p>Que fait le code suivant ?</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>cote <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(cote):
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(cote):
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">&#34;#&#34;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">&#34;&#34;</span>)
+</span></span></code></pre></div>
+<div class="box notices cstyle warning">
+  <div class="box-label"><i class="fa-fw fas fa-exclamation-triangle"></i> Warning</div>
+  <div class="box-content">
+<p>En règle générale, il est rare d&rsquo;avoir plus de 3 boucles les unes dans les autres. Si vous devez en imbriquer plus que 3 pour résoudre un algorithme, il y a probablement un problème de logique dans la conception de votre solution.</p>
+  </div>
+</div>
+<h1 id="remarque-du-jour">Remarque du jour</h1>
+
+<div class="box notices cstyle tip">
+  <div class="box-label"><i class="fa-fw fas fa-lightbulb"></i> Tip</div>
+  <div class="box-content">
+<p>90% de temps d&rsquo;exécution d&rsquo;un programme se passe dans 10% du code</p>
+  </div>
+</div>
+<p>Il y a seulement quelques boucles responsables de la majeure partie du temps de calcul d&rsquo;un programme. C&rsquo;est en optimisant ces boucles que vous gagnerez en performance.</p>
+<h1 id="lab">Lab</h1>
+<p><a href="Boucles.ipynb"><strong>Atelier sur les boucles</strong></a></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation" dir="ltr">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a href="/">
+	<img src="/images/logoSN.png">
+</a>
+
+
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1719591774" defer></script>
+        <script src="/js/lunr/lunr.min.js?1719591774" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1719591774" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1719591774" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1719591774" defer></script>
+        <script src="/js/search.js?1719591774" defer></script>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics">
+          <li data-nav-id="/base-de-connaissances/index.html" class="dd-item"><a href="/base-de-connaissances/index.html">Base De Connaissances</a><ul id="subsections-20178e3fa8e2375eb4b5dcaa5e4bb059">
+          <li data-nav-id="/base-de-connaissances/markdown/index.html" class="dd-item"><a href="/base-de-connaissances/markdown/index.html">MarkDown</a></li>
+          <li data-nav-id="/base-de-connaissances/jupyter/index.html" class="dd-item"><a href="/base-de-connaissances/jupyter/index.html">Jupyter</a></li></ul></li>
+          <li data-nav-id="/cours/index.html" class="dd-item parent"><a href="/cours/index.html">Cours</a><ul id="subsections-2a099ab54b3d651b0702b70cc20b5850">
+          <li data-nav-id="/cours/bases-de-python/index.html" class="dd-item"><a href="/cours/bases-de-python/index.html">Bases de Python</a></li>
+          <li data-nav-id="/cours/introduction-%C3%A0-la-programmation/index.html" class="dd-item"><a href="/cours/introduction-%C3%A0-la-programmation/index.html">Introduction à la programmation</a></li>
+          <li data-nav-id="/cours/les-chaines-de-caract%C3%A8res/index.html" class="dd-item"><a href="/cours/les-chaines-de-caract%C3%A8res/index.html">Les Chaines de caractères</a></li>
+          <li data-nav-id="/cours/les-librairies-syst%C3%A8mes/index.html" class="dd-item"><a href="/cours/les-librairies-syst%C3%A8mes/index.html">Les Librairies systèmes</a></li>
+          <li data-nav-id="/cours/les-listes/index.html" class="dd-item"><a href="/cours/les-listes/index.html">Les Listes</a></li>
+          <li data-nav-id="/cours/les-objets/index.html" class="dd-item"><a href="/cours/les-objets/index.html">Les Objets</a></li>
+          <li data-nav-id="/cours/les-structures-de-donn%C3%A9es/index.html" class="dd-item"><a href="/cours/les-structures-de-donn%C3%A9es/index.html">Les Structures de Données</a></li>
+          <li data-nav-id="/cours/ordinogramme/index.html" class="dd-item"><a href="/cours/ordinogramme/index.html">Ordinogramme</a></li>
+          <li data-nav-id="/cours/projet-fil-rouge/index.html" class="dd-item alwaysopen"><a href="/cours/projet-fil-rouge/index.html">Projet - Fil Rouge</a><ul id="subsections-71602ad2dd8503c6b2ed949ce70f0c96">
+          <li data-nav-id="/cours/projet-fil-rouge/partie-1/index.html" class="dd-item"><a href="/cours/projet-fil-rouge/partie-1/index.html">Projet - Partie 1</a></li>
+          <li data-nav-id="/cours/projet-fil-rouge/partie-2/index.html" class="dd-item"><a href="/cours/projet-fil-rouge/partie-2/index.html">Projet - Partie 2</a></li>
+          <li data-nav-id="/cours/projet-fil-rouge/partie-3/index.html" class="dd-item"><a href="/cours/projet-fil-rouge/partie-3/index.html">Projet - Partie 3</a></li>
+          <li data-nav-id="/cours/projet-fil-rouge/partie-4/index.html" class="dd-item"><a href="/cours/projet-fil-rouge/partie-4/index.html">Projet - Partie 4</a></li></ul></li>
+          <li data-nav-id="/cours/structures-conditionnelles/index.html" class="dd-item"><a href="/cours/structures-conditionnelles/index.html">Structures conditionnelles</a></li>
+          <li data-nav-id="/cours/la-r%C3%A9p%C3%A9tition---les-boucles/index.html" class="dd-item active"><a href="/cours/la-r%C3%A9p%C3%A9tition---les-boucles/index.html">La répétition - Les boucles</a></li></ul></li>
+          <li data-nav-id="/outils/index.html" class="dd-item"><a href="/outils/index.html">Outils</a><ul id="subsections-72ad994f883591fb3ac19a0cce2ee066">
+          <li data-nav-id="/outils/vs-code--jupyter/index.html" class="dd-item"><a href="/outils/vs-code--jupyter/index.html">VS Code &amp; Jupyter</a></li></ul></li>
+        </ul>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                    <option lang="en" id="en" value="/cours/la-r%C3%A9p%C3%A9tition---les-boucles/index.html" selected></option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="zen-dark" value="zen-dark" selected>Zen Dark</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</button></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1719591774" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1719591774" defer></script>
+    <script src="/js/featherlight.min.js?1719591774" defer></script>
+    <script src="/js/theme.js?1719591774" defer></script>
+  </body>
+</html>
